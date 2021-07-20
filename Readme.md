@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
-* Студент: [eteries](https://up.htmlacademy.ru/adaptive/23/user/34198).
-* Наставник: `Неизвестно`.
+* Студент: [Сергей Яньшин](https://up.htmlacademy.ru/adaptive/23/user/34198).
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/id78239).
 
 ---
 
