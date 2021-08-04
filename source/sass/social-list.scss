@@ -1,0 +1,11 @@
+.social-list {
+  @include list-unset();
+}
+
+.social-list__link {
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,24 @@
+.testimonials {
+  //
+}
+
+.testimonials__wrapper {
+  @include wrapper();
+}
+
+.testimonials__text {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.testimonials__name {
+  font-size: 17px;
+  line-height: 24px;
+  color: $text-color-secondary;
+  font-weight: bold;
+}
+
+.testimonials__user-name {
+  font-size: 17px;
+  line-height: 30px;
+}

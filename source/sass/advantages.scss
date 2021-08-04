@@ -1,0 +1,41 @@
+.advantages__wrapper {
+  @include wrapper();
+}
+
+.advantages__list {
+  @include list-unset();
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $text-color-secondary;
+}
+
+.advantages__item {
+  padding: 50px 20px 20px 50px;
+  background-image: url("../img/icons/advantage-1.svg");
+  background-repeat: no-repeat;
+
+  &--eco {
+    background-image: url("../img/icons/advantage-1.svg");
+  }
+
+  &--knit {
+    background-image: url("../img/icons/advantage-2.svg");
+  }
+
+  &--price {
+    background-image: url("../img/icons/advantage-3.svg");
+  }
+
+  &--support {
+    background-image: url("../img/icons/advantage-4.svg");
+  }
+
+  &--like {
+    background-image: url("../img/icons/advantage-5.svg");
+  }
+
+  &--present {
+    background-image: url("../img/icons/advantage-6.svg");
+  }
+}

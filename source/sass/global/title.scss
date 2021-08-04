@@ -1,0 +1,10 @@
+.title {
+  font-weight: bold;
+  font-family: $text-color-secondary;
+  font-size: 25px;
+  line-height: 30px;
+
+  &--lg {
+    font-size: 27px;
+  }
+}

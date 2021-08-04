@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+@import "vendors/normalize.css";
+@import "global/base";
+@import "global/fonts";
+@import "global/variables";
+@import "global/mixins";
+@import "global/utils";
+@import "global/link";
+@import "global/button";
+@import "global/title";
+@import "page.scss";
+@import "intro.scss";
+@import "page-header.scss";
+@import "page-footer.scss";
+@import "promo-product.scss";
+@import "advantages.scss";
+@import "testimonials.scss";
+@import "slider.scss";
+@import "contacts.scss";
+@import "main-nav.scss";
+@import "social-list.scss";
+@import "modal.scss";
+@import "cart-form.scss";

@@ -1,0 +1,36 @@
+.promo-product {
+  padding: 31px 0 36px;
+}
+
+.promo-product__wrapper {
+  @include wrapper();
+}
+
+.promo-product__title {
+  margin: 0 0 3px;
+}
+
+.promo-product__label {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $green;
+  margin: 0 0 18px;
+}
+
+.promo-product__description {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.promo-product__features {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.promo-product__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}

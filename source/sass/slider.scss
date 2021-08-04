@@ -1,0 +1,37 @@
+.slider {
+  //
+}
+
+.slider__controls {
+  //
+}
+
+.slider__prev,
+.slider__next {
+  background-image: url("../img/icons/arrow-left-lg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  border: 1px solid #ececec;
+
+  &:hover,
+  &:focus {
+    color: $gray-dark;
+    background-color: transparent;
+    opacity: 0.6;
+  }
+
+  &:focus {
+    color: $gray-dark;
+    background-color: transparent;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.slider__next {
+  background-image: url("../img/icons/arrow-right-lg.svg");
+}

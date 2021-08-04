@@ -1,0 +1,22 @@
+.contacts {
+  padding: 38px 0;
+}
+
+.contacts__wrapper {
+  @include wrapper();
+}
+
+.contacts__action {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.contacts__list {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.contacts__address {
+  font-style: normal;
+}
