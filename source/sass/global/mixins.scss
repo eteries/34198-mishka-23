@@ -18,3 +18,10 @@
   margin: 0 auto;
   padding: 0 $wrapper-padding-sm;
 }
+
+@mixin label() {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $text-color-secondary;
+}
