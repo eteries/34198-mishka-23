@@ -1,0 +1,13 @@
+.modal {
+  &--open {
+    background-color: rgba($color-gray-lightest, 0.9);
+  }
+}
+
+.modal__dialog {
+  padding: 28px 30px 36px;
+}
+
+.modal__title {
+  text-align: center;
+}

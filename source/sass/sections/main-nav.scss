@@ -1,16 +1,14 @@
-.main-nav {
-  //
-}
-
 .main-nav__list {
   @include list-unset();
+
   margin: 0;
 }
 
 .main-nav__item {
-  font-size: 17px;
-  line-height: 24px;
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  @include text-size(17px, 24px);
+
+  border-top: 1px solid $color-gray-medium;
+  border-bottom: 1px solid $color-gray-medium;
 }
 
 .main-nav__toggle {
@@ -18,12 +16,12 @@
   height: 14px;
   background-color: transparent;
   border: none;
-  background-image: url("../img/icons/menu.svg");
+  background-image: url("../../img/icons/menu.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 
   &--close {
-    background-image: url("../img/icons/menu-close.svg");
+    background-image: url("../../img/icons/menu-close.svg");
   }
 }

@@ -11,26 +11,24 @@
 }
 
 .promo-product__label {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;
+  @include text-size(17px, 20px);
+
+  font-weight: 700;
   text-transform: uppercase;
-  color: $green;
+  color: $color-green-medium;
   margin: 0 0 18px;
 }
 
 .promo-product__description {
-  font-size: 15px;
-  line-height: 24px;
+  @include text-size(15px, 24px);
 }
 
 .promo-product__features {
-  font-size: 15px;
-  line-height: 20px;
+  @include text-size(15px, 20px);
 }
 
 .promo-product__price {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
+  @include text-size(17px, 24px);
+
+  font-weight: 700;
 }

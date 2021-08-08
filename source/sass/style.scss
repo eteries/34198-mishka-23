@@ -1,26 +1,40 @@
+// vendor's styles
 @import "vendors/normalize";
+
+// global styles
 @import "global/base.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/mixins.scss";
 @import "global/utils.scss";
+
+// global controls
 @import "global/link.scss";
 @import "global/button.scss";
 @import "global/title.scss";
 @import "global/input.scss";
 @import "global/radio.scss";
+@import "global/radio-group.scss";
 @import "global/checkbox.scss";
-@import "page.scss";
-@import "intro.scss";
-@import "page-header.scss";
-@import "page-footer.scss";
-@import "promo-product.scss";
-@import "advantages.scss";
-@import "testimonials.scss";
-@import "slider.scss";
-@import "contacts.scss";
-@import "main-nav.scss";
-@import "social-list.scss";
-@import "modal.scss";
-@import "cart-form.scss";
-@import "order-form.scss";
+
+// page's sections
+@import "sections/page";
+@import "sections/main";
+@import "sections/intro";
+@import "sections/page-header";
+@import "sections/page-footer";
+@import "sections/promo-product";
+@import "sections/advantages";
+@import "sections/testimonials";
+@import "sections/contacts";
+@import "sections/main-nav";
+@import "sections/modal";
+
+// inner blocks
+@import "blocks/slider";
+@import "blocks/social-list";
+@import "blocks/cart-form";
+@import "blocks/order-form";
+@import "blocks/products-list";
+@import "blocks/product";
+@import "blocks/video";

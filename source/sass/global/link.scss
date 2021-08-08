@@ -1,18 +1,18 @@
 .link {
-  color: $text-color-secondary;
-  font-size: inherit;
-  line-height: inherit;
+  @include text-size(inherit, inherit);
+
+  color: $color-gray-darkest;
   font-weight: 700;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: rgba($text-color-secondary, 0.6);
+    color: rgba($color-gray-darkest, 0.6);
     text-decoration: none;
   }
 
   &:active {
-    color: rgba($text-color-secondary, 0.6);
+    color: rgba($color-gray-darkest, 0.6);
   }
 }
 
@@ -28,13 +28,13 @@
 
   &:hover,
   &:focus {
-    color: $green;
+    color: $color-green-medium;
     text-decoration: underline;
     opacity: 1;
   }
 
   &:active {
-    color: $green;
+    color: $color-green-medium;
     text-decoration: none;
     opacity: 1;
   }

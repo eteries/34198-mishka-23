@@ -19,9 +19,20 @@
   padding: 0 $wrapper-padding-sm;
 }
 
+@mixin text-size($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
 @mixin label() {
+  @include text-size(17px, 18px);
+
   font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
-  color: $text-color-secondary;
+  color: $color-gray-darkest;
+}
+
+@mixin color-scheme($bg-color: inherit, $text-color: inherit, $border-color: inherit) {
+  background-color: $bg-color;
+  color: $text-color;
+  border-color: $border-color;
 }

@@ -1,0 +1,16 @@
+.radio-group__radio {
+  @include visually-hidden();
+}
+
+.radio-group__label {
+  border: 1px solid rgba($color-gray-dark, 0.1);
+  padding: 10px 20px;
+
+  &:hover {
+    border-color: rgba($color-gray-dark, 0.3);
+  }
+
+  &:active {
+    border-color: $color-green-medium;
+  }
+}

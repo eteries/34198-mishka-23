@@ -1,6 +1,6 @@
 .intro {
-  padding-top: 53px;
-  background-image: url("../img/intro-mobile.jpg");
+  padding: 53px 0 0;
+  background-image: url("../../img/intro-mobile.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   min-width: 373px;
@@ -21,29 +21,29 @@
 }
 
 .intro__categories-item {
-  background-color: $green;
+  background-color: $color-green-medium;
   background-repeat: no-repeat;
   background-position: center right 20px;
 
   &--interior {
-    background-image: url("../img/icons/link-interior.svg");
+    background-image: url("../../img/icons/link-interior.svg");
     background-position: center right 30px;
   }
 
   &--toy {
-    background-image: url("../img/icons/link-toy.svg");
-    background-color: $dark-green;
+    background-image: url("../../img/icons/link-toy.svg");
+    background-color: $color-green-dark;
   }
 }
 
 .intro__categories-link {
+  @include text-size(19px, 24px);
+
   display: block;
   min-height: 79px;
   padding: 20px 100px 20px 20px;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  color: $white;
+  font-weight: 700;
+  color: $color-gray-lightest;
   text-decoration: none;
 
   &:hover {

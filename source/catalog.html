@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка - Каталог</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
-<header class="page-header">
+<header class="page-header"  >
   <div class="page-header__wrapper">
     <a class="page-header__logo" href="index.html">
       <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
@@ -16,13 +17,13 @@
       </button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a>Каталог товаров</a>
+          <a class="link link--menu">Каталог товаров</a>
         </li>
         <li class="main-nav__item">
-          <a href="form.html">Вязание на заказ</a>
+          <a class="link link--menu" href="form.html">Вязание на заказ</a>
         </li>
         <li class="main-nav__item main-nav__item--search">
-          <a href="#">
+          <a class="link link--menu" href="#">
             <svg class="main-nav__item-icon" width="16" height="16">
               <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
@@ -30,7 +31,7 @@
           </a>
         </li>
         <li class="main-nav__item main-nav__item--cart">
-          <a href="#">
+          <a class="link link--menu" href="#">
             <svg class="main-nav__item-icon" width="16" height="16">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
@@ -49,40 +50,61 @@
         <a class="product__image" href="#">
           <img src="img/photo-1-mobile.jpg" width="260" height="195" alt="Вязанная игрушка «Зайчик-попрыгайчик»">
         </a>
-        <a class="product__title" href="#">
-          <h3 class="title title--size-sm">Зайчик-попрыгайчик</h3>
-        </a>
-        <p class="product__description">Рост 30 см, вес 200 г</p>
-        <b class="product__price">1 200 руб.</b>
-        <a class="product__order icon-button icon-button--cart" href="#">Добавить в корзину</a>
+        <div class="product__info">
+          <a class="product__title-link" href="#">
+            <h3 class="title title--size-sm product__title">Зайчик-попрыгайчик</h3>
+          </a>
+          <p class="product__description">Рост 30 см, вес 200 г</p>
+          <b class="product__price">1 200 руб.</b>
+          <a class="product__order icon-button icon-button--cart" href="#">
+            <svg class="main-nav__item-icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            <span class="visually-hidden">Добавить в корзину</span>
+          </a>
+        </div>
       </li>
       <li class="products-list__item product">
         <a class="product__image" href="#">
           <img src="img/photo-2-mobile.jpg" width="260" height="195" alt="Вязанная корзинка малая">
         </a>
-        <a class="product__title" href="#">
-          <h3 class="title title--size-sm">Корзинка для белья</h3>
-        </a>
-        <p class="product__description">Диаметр 15 см, высота 10 см</p>
-        <b class="product__price">690 руб.</b>
-        <a class="product__order icon-button icon-button--cart" href="#">Добавить в корзину</a>
+        <div class="product__info">
+          <a class="product__title-link" href="#">
+            <h3 class="title title--size-sm product__title">Корзинка для белья</h3>
+          </a>
+          <p class="product__description">Диаметр 15 см, высота 10 см</p>
+          <b class="product__price">690 руб.</b>
+          <a class="product__order icon-button icon-button--cart" href="#">
+            <svg class="main-nav__item-icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            <span class="visually-hidden">Добавить в корзину</span>
+          </a>
+        </div>
       </li>
       <li class="products-list__item product">
         <a class="product__image" href="#">
           <img src="img/photo-3-mobile.jpg" width="260" height="195" alt="Вязанная корзинка большая">
         </a>
-        <a class="product__title" href="#">
-          <h3 class="title title--size-sm">Большая корзинка для&nbsp;игрушек</h3>
-        </a>
-        <p class="product__description">Диаметр 30 см, высота 30 см</p>
-        <b class="product__price">1 500 руб.</b>
-        <a class="product__order icon-button icon-button--cart" href="#">Добавить в корзину</a>
+        <div class="product__info">
+          <a class="product__title-link" href="#">
+            <h3 class="title title--size-sm product__title">Большая корзинка для&nbsp;игрушек</h3>
+          </a>
+          <p class="product__description">Диаметр 30 см, высота 30 см</p>
+          <b class="product__price">1 500 руб.</b>
+          <a class="product__order icon-button icon-button--cart" href="#">
+            <svg class="main-nav__item-icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            <span class="visually-hidden">Добавить в корзину</span>
+          </a>
+        </div>
       </li>
     </ul>
     <section class="video">
-      <h2 class="video__title title title--video">Процесс производства</h2>
+      <h2 class="video__title title title--size-sm">Процесс производства</h2>
       <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <a class="video__button" href="#">
+      <a class="video__play" href="#">
         <img class="video__poster" src="img/video-mobile.jpg" width="260" height="150" alt="Видео о производстве «мишек»">
       </a>
       <a class="video__button button" href="form.html">Сделать заказ</a>
@@ -132,20 +154,22 @@
   </div>
 </footer>
 
-<section class="modal">
-  <h2 class="modal__title">Добавить в корзину</h2>
-  <form class="modal__body cart-form" action="https://echo.htmlacademy.ru" method="post">
-    <p class="cart-form__description">Выберите размер:</p>
-    <p class="cart-form__control">
-      <input class="card-modal__radio" type="radio" name="size" id="size-s" value="s">
-      <label class="card-modal__label button" for="size-s">S</label>
-      <input class="card-modal__radio" type="radio" name="size" id="size-l" value="l">
-      <label class="card-modal__label button" for="size-l">M</label>
-      <input class="card-modal__radio" type="radio" name="size" id="size-m" value="m">
-      <label class="card-modal__label button" for="size-m">L</label>
-    </p>
-    <button class="cart-form__submit button button--accent" type="submit">Заказать</button>
-  </form>
+<section class="modal modal--open">
+  <div class="modal__dialog">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <form class="modal__body cart-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="cart-form__description">Выберите размер:</p>
+      <p class="cart-form__control radio-group">
+        <input class="radio-group__radio" type="radio" name="size" id="size-s" value="s">
+        <label class="radio-group__label" for="size-s">S</label>
+        <input class="radio-group__radio" type="radio" name="size" id="size-l" value="l">
+        <label class="radio-group__label" for="size-l">M</label>
+        <input class="radio-group__radio" type="radio" name="size" id="size-m" value="m">
+        <label class="radio-group__label" for="size-m">L</label>
+      </p>
+      <button class="cart-form__submit button button--accent" type="submit">Заказать</button>
+    </form>
+  </div>
 </section>
 </body>
 </html>

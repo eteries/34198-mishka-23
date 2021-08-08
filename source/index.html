@@ -20,7 +20,7 @@
             <a class="link link--menu" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a  class="link link--menu" href="form.html">Вязание на заказ</a>
+            <a class="link link--menu" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
             <a class="link link--menu" href="#">
@@ -45,7 +45,7 @@
   <main class="main">
     <section class="intro">
       <div class="intro__wrapper">
-        <h1 class="intro__title title title--lg">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
+        <h1 class="intro__title title title--size-lg">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
         <ul class="intro__categories-list">
           <li class="intro__categories-item intro__categories-item--interior">
             <a class="intro__categories-link" href="#">Предметы интерьера</a>
@@ -191,19 +191,21 @@
   </footer>
 
   <section class="modal">
-    <h2 class="modal__title title">Добавить в корзину</h2>
-    <form class="modal__body cart-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="cart-form__description">Выберите размер:</p>
-      <p class="cart-form__control">
-        <input class="cart-form__radio" type="radio" name="size" id="size-s" value="s">
-        <label class="cart-form__label" for="size-s">S</label>
-        <input class="cart-form__radio" type="radio" name="size" id="size-l" value="l">
-        <label class="cart-form__label" for="size-l">M</label>
-        <input class="cart-form__radio" type="radio" name="size" id="size-m" value="m">
-        <label class="cart-form__label" for="size-m">L</label>
-      </p>
-      <button class="cart-form__submit button button--accent" type="submit">Заказать</button>
-    </form>
+    <div class="modal__dialog">
+      <h2 class="modal__title title">Добавить в корзину</h2>
+      <form class="modal__body cart-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="cart-form__description">Выберите размер:</p>
+        <p class="cart-form__control radio-group">
+          <input class="radio-group__radio" type="radio" name="size" id="size-s" value="s">
+          <label class="radio-group__label" for="size-s">S</label>
+          <input class="radio-group__radio" type="radio" name="size" id="size-l" value="l">
+          <label class="radio-group__label" for="size-l">M</label>
+          <input class="radio-group__radio" type="radio" name="size" id="size-m" value="m">
+          <label class="radio-group__label" for="size-m">L</label>
+        </p>
+        <button class="cart-form__submit button button--accent" type="submit">Заказать</button>
+      </form>
+    </div>
   </section>
   </body>
 </html>

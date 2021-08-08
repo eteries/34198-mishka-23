@@ -1,0 +1,27 @@
+.product__info {
+  background: $color-gray-lightest;
+  border: 1px solid $color-gray-medium;
+  padding: 26px 28px;
+
+  &:hover {
+    border-color: $color-green-medium;
+  }
+}
+
+.product__title {
+  margin: 0 0 20px;
+}
+
+.product__title-link {
+  color: $color-gray-darkest;
+  text-decoration: none;
+}
+
+.product__price {
+  @include text-size(17px, 24px);
+
+  padding: 23px 0 25px;
+  border-top: 1px solid $color-gray-medium;
+  font-weight: 700;
+  color: $color-gray-darkest;
+}

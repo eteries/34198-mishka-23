@@ -1,26 +1,22 @@
 .button {
+  @include color-scheme($color-gray-lightest, $color-gray-dark, $color-gray-medium);
+  @include text-size(17px, 20px);
+
   display: inline-flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: $white;
-  border: 2px solid $gray-dark;
   padding: 10px 26px;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
+  border-width: 2px;
+  border-style: solid;
   min-height: 52px;
   cursor: pointer;
 
-  &:hover {
-    color: $white;
-    background-color: $gray-dark;
-  }
-
+  &:hover,
   &:focus {
-    color: $white;
-    background-color: $gray-dark;
+    @include color-scheme($color-gray-dark, $color-gray-lightest);
   }
 
   &:active {
@@ -29,15 +25,12 @@
 }
 
 .button--accent {
-  background-color: $green;
-  border-color: $green;
-  color: $white;
+  @include color-scheme($color-green-medium, $color-gray-lightest, $color-green-medium);
 
   &:hover,
   &:focus {
-    background-color: $green;
-    border-color: $green;
-    color: $white;
+    @include color-scheme($color-green-medium, $color-gray-lightest, $color-green-medium);
+
     opacity: 0.6;
   }
 

@@ -7,14 +7,11 @@
 }
 
 .contacts__action {
-  display: block;
   width: 100%;
-  text-align: center;
 }
 
 .contacts__list {
-  font-size: 14px;
-  line-height: 30px;
+  @include text-size(14px, 30px);
 }
 
 .contacts__address {

@@ -1,0 +1,7 @@
+.products-list {
+  @include list-unset();
+}
+
+.products-list__item {
+  margin: 0 0 30px;
+}
