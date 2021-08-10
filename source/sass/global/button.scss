@@ -1,0 +1,40 @@
+.button {
+  @include color-scheme($color-gray-lightest, $color-gray-dark, $color-gray-medium);
+  @include text-size(17px, 20px);
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 26px;
+  font-weight: 700;
+  text-decoration: none;
+  border-width: 2px;
+  border-style: solid;
+  min-height: 52px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    @include color-scheme($color-gray-dark, $color-gray-lightest);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.button--accent {
+  @include color-scheme($color-green-medium, $color-gray-lightest, $color-green-medium);
+
+  &:hover,
+  &:focus {
+    @include color-scheme($color-green-medium, $color-gray-lightest, $color-green-medium);
+
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
   <header class="page-header">
@@ -16,13 +17,13 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="link link--menu" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Вязание на заказ</a>
+            <a class="link link--menu" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
-            <a href="#">
+            <a class="link link--menu" href="#">
               <svg class="main-nav__item-icon" width="16" height="16">
                 <use xlink:href="img/sprite.svg#icon-search"></use>
               </svg>
@@ -30,7 +31,7 @@
             </a>
           </li>
           <li class="main-nav__item main-nav__item--cart">
-            <a href="#">
+            <a class="link link--menu" href="#">
               <svg class="main-nav__item-icon" width="16" height="16">
                 <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
@@ -44,13 +45,13 @@
   <main class="main">
     <section class="intro">
       <div class="intro__wrapper">
-        <h1 class="intro__title">Милые штуки ручной работы&nbsp;для дома</h1>
+        <h1 class="intro__title title title--size-lg">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
         <ul class="intro__categories-list">
           <li class="intro__categories-item intro__categories-item--interior">
-            <a href="#">Предметы интерьера</a>
+            <a class="intro__categories-link" href="#">Предметы интерьера</a>
           </li>
-          <li class="intro__categories-item intro__categories-item--interior">
-            <a href="#">Предметы интерьера</a>
+          <li class="intro__categories-item intro__categories-item--toy">
+            <a class="intro__categories-link" href="#">Вязанные игрушки</a>
           </li>
         </ul>
       </div>
@@ -103,7 +104,7 @@
     </section>
     <section class="testimonials">
       <div class="testimonials__wrapper slider">
-        <h2 class="testimonials__title">Отзывы</h2>
+        <h2 class="testimonials__title title">Отзывы</h2>
         <div class="testimonials__list">
           <blockquote class="testimonials__item slider__item">
             <p class="testimonials__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
@@ -112,10 +113,10 @@
           </blockquote>
         </div>
         <p class="testimonials__controls slider__controls">
-          <button class="button button--prev" type="button">
+          <button class="button slider__prev" type="button">
             <span class="visually-hidden">Назад</span>
           </button>
-          <button class="button button--next" type="button">
+          <button class="button slider__next" type="button">
             <span class="visually-hidden">Вперёд</span>
           </button>
         </p>
@@ -126,20 +127,22 @@
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h3 class="contacts__title">Контакты</h3>
+        <h2 class="contacts__title title">Контакты</h2>
         <dl class="contacts__list">
           <dt class="contacts__label">E-mail:</dt>
           <dd class="contacts__description">
-            <a class="link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            <a class="link link--email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </dd>
           <dt class="contacts__label">Адрес:</dt>
           <dd class="contacts__description">
-            <address>г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</address>
+            <address class="contacts__address">г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</address>
           </dd>
         </dl>
-        <div class="contacts__map">
-          <img src="img/map.png" width="320" height="455" alt="«Мишка» на карте">
-        </div>
+      </div>
+      <div class="contacts__map">
+        <img src="img/map.png" width="320" height="455" alt="«Мишка» на карте">
+      </div>
+      <div class="contacts__wrapper">
         <a class="contacts__action button" href="#">Напишите нам</a>
       </div>
     </section>
@@ -153,7 +156,7 @@
         <h3 class="visually-hidden">«Мишка» в социальных сетях</h3>
         <ul class="social-list">
           <li class="social-list__item">
-            <a class="icon-button" href="https://instagram.com">
+            <a class="social-list__link" href="https://instagram.com">
               <svg class="social-list__icon" width="16" height="16" aria-label="Наш Instagram">
                 <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
@@ -161,7 +164,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="icon-button" href="https://facebook.com">
+            <a class="social-list__link" href="https://facebook.com">
               <svg class="social-list__icon" width="16" height="16" aria-label="Наш Facebook">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
@@ -169,7 +172,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="icon-button" href="https://twitter.com">
+            <a class="social-list__link" href="https://twitter.com">
               <svg class="social-list__icon" width="16" height="16" aria-label="Наш Twitter">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
@@ -188,19 +191,21 @@
   </footer>
 
   <section class="modal">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <form class="modal__body cart-form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="cart-form__description">Выберите размер:</p>
-      <p class="cart-form__control">
-        <input class="card-modal__radio" type="radio" name="size" id="size-s" value="s">
-        <label class="card-modal__label button" for="size-s">S</label>
-        <input class="card-modal__radio" type="radio" name="size" id="size-l" value="l">
-        <label class="card-modal__label button" for="size-l">M</label>
-        <input class="card-modal__radio" type="radio" name="size" id="size-m" value="m">
-        <label class="card-modal__label button" for="size-m">L</label>
-      </p>
-      <button class="cart-form__submit button button--accent" type="submit">Заказать</button>
-    </form>
+    <div class="modal__dialog">
+      <h2 class="modal__title title">Добавить в корзину</h2>
+      <form class="modal__body cart-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="cart-form__description">Выберите размер:</p>
+        <p class="cart-form__control radio-group">
+          <input class="radio-group__radio" type="radio" name="size" id="size-s" value="s">
+          <label class="radio-group__label" for="size-s">S</label>
+          <input class="radio-group__radio" type="radio" name="size" id="size-l" value="l">
+          <label class="radio-group__label" for="size-l">M</label>
+          <input class="radio-group__radio" type="radio" name="size" id="size-m" value="m">
+          <label class="radio-group__label" for="size-m">L</label>
+        </p>
+        <button class="cart-form__submit button button--accent" type="submit">Заказать</button>
+      </form>
+    </div>
   </section>
   </body>
 </html>

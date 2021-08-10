@@ -1,0 +1,33 @@
+.video {
+  border: 1px solid $color-gray-medium;
+  padding: 21px 34px 33px;
+  margin: 0 0 51px;
+
+  &:hover {
+    border-color: $color-green-medium;
+  }
+}
+
+.video__title {
+  padding: 0 0 0 57px;
+  background-image: url("../../img/icons/camera.svg");
+  background-repeat: no-repeat;
+}
+
+.video__description {
+  @include text-size(13px, 24px);
+}
+
+.video__play {
+  margin: 0 0 41px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 101px;
+    height: 77px;
+    background-image: url("../../img/icons/play.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

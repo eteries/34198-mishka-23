@@ -1,0 +1,41 @@
+.link {
+  @include text-size(inherit, inherit);
+
+  color: $color-gray-darkest;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba($color-gray-darkest, 0.6);
+    text-decoration: none;
+  }
+
+  &:active {
+    color: rgba($color-gray-darkest, 0.6);
+  }
+}
+
+.link--menu {
+  display: block;
+  width: 100%;
+  padding: 29px 30px 27px;
+  text-align: center;
+}
+
+.link--email {
+  font-weight: 400;
+
+  &:hover,
+  &:focus {
+    color: $color-green-medium;
+    text-decoration: underline;
+    opacity: 1;
+  }
+
+  &:active {
+    color: $color-green-medium;
+    text-decoration: none;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,25 @@
+.slider__prev,
+.slider__next {
+  @include color-scheme(transparent, $color-gray-dark, $color-gray-medium);
+
+  background-image: url("../../img/icons/arrow-left-lg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  border-width: 1px;
+
+  &:hover,
+  &:focus {
+    @include color-scheme(transparent, $color-gray-dark, $color-gray-medium);
+
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.slider__next {
+  background-image: url("../../img/icons/arrow-right-lg.svg");
+}

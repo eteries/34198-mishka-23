@@ -1,0 +1,19 @@
+.contacts {
+  padding: 38px 0;
+}
+
+.contacts__wrapper {
+  @include wrapper();
+}
+
+.contacts__action {
+  width: 100%;
+}
+
+.contacts__list {
+  @include text-size(14px, 30px);
+}
+
+.contacts__address {
+  font-style: normal;
+}

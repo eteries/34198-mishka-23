@@ -1,0 +1,14 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  @include text-size(15px, 1.5);
+
+  font-family: $font-family-primary;
+  font-weight: 400;
+  color: $color-gray-dark;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}

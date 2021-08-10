@@ -1,0 +1,41 @@
+.input__label {
+  @include label();
+
+  display: block;
+}
+
+.input__control {
+  @include text-size(17px, 18px);
+
+  color: $color-gray-darkest;
+  min-height: 52px;
+  border: none;
+  border-bottom: 2px solid $color-gray-darkest;
+  padding: 15px 18px;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $color-green-medium;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  ::placeholder {
+    opacity: 0.3;
+  }
+}
+
+.input__control--textarea {
+  border: 2px solid $color-gray-dark;
+
+  &:hover,
+  &:focus {
+    border-color: $color-green-medium;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,42 @@
+.order-form {
+  padding: 17px 0 55px;
+}
+
+.order-form__wrapper {
+  @include wrapper();
+}
+
+.order-form__description {
+  @include text-size(13px, 24px);
+
+  margin: 0 0 29px;
+}
+
+.order-form__legend {
+  @include text-size(17px, 16px);
+
+  color: $color-green-medium;
+  min-width: 58px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.order-form__fieldset {
+  border: none;
+  border-top: 1px solid $color-green-medium;
+  padding: 0;
+  margin: 0 0 25px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.order-form__control {
+  margin: 20px 0;
+
+  &:last-child {
+    margin: 20px 0 0;
+  }
+}

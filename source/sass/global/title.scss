@@ -1,0 +1,20 @@
+.title {
+  @include text-size(25px, 30px);
+
+  font-weight: 700;
+  color: $color-gray-darkest;
+
+  &--size-sm {
+    @include text-size(17px, 24px);
+  }
+
+  &--size-lg {
+    @include text-size(27px, 30px);
+  }
+
+  &--inner {
+    background-color: $color-gray-light;
+    padding: 73px 23px;
+    text-align: center;
+  }
+}

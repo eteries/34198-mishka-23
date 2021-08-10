@@ -1,0 +1,27 @@
+.main-nav__list {
+  @include list-unset();
+
+  margin: 0;
+}
+
+.main-nav__item {
+  @include text-size(17px, 24px);
+
+  border-top: 1px solid $color-gray-medium;
+  border-bottom: 1px solid $color-gray-medium;
+}
+
+.main-nav__toggle {
+  width: 20px;
+  height: 14px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../../img/icons/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &--close {
+    background-image: url("../../img/icons/menu-close.svg");
+  }
+}
