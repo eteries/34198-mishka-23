@@ -6,16 +6,16 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/mixins.scss";
-@import "global/utils.scss";
+@import "global/visually-hidden";
 
 // global controls
-@import "global/link.scss";
-@import "global/button.scss";
-@import "global/title.scss";
-@import "global/input.scss";
-@import "global/radio.scss";
-@import "global/radio-group.scss";
-@import "global/checkbox.scss";
+@import "controls/link";
+@import "controls/button";
+@import "controls/title";
+@import "controls/input";
+@import "controls/radio";
+@import "controls/radio-group";
+@import "controls/checkbox";
 
 // page's sections
 @import "sections/page";
