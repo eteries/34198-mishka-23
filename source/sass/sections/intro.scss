@@ -1,18 +1,18 @@
 .intro {
   padding: 53px 0 0;
-  background-image: url("../../img/intro-mobile.jpg");
+  background-image: url("../img/intro-mobile.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 373px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/intro-tablet.jpg");
+    background-image: url("../img/intro-tablet.jpg");
     min-height: 758px;
     padding: 155px 0 0;
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/intro-desktop.jpg");
+    background-image: url("../img/intro-desktop.jpg");
   }
 }
 
@@ -59,7 +59,7 @@
   background-position: center right 20px;
 
   &--interior {
-    background-image: url("../../img/icons/link-interior.svg");
+    background-image: url("../img/icons/link-interior.svg");
     background-position: center right 30px;
 
     @media (min-width: $tablet-width) {
@@ -68,7 +68,7 @@
   }
 
   &--toy {
-    background-image: url("../../img/icons/link-toy.svg");
+    background-image: url("../img/icons/link-toy.svg");
     background-color: $color-green-dark;
 
     @media (min-width: $tablet-width) {
