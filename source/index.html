@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-  <header class="page-header">
+  <header class="page__header page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo">
         <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
@@ -16,11 +16,11 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="link link--menu" href="catalog.html">Каталог товаров</a>
+          <li class="main-nav__item main-nav__item--catalog">
+            <a class="link link--catalog" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
-            <a class="link link--menu" href="form.html">Вязание на заказ</a>
+          <li class="main-nav__item main-nav__item--form">
+            <a class="link link--form" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
             <a class="link link--menu" href="#">
@@ -36,6 +36,21 @@
                 <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
               Корзина: пока пуста
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--delivery">
+            <a class="link link--delivery" href="#">
+              Бесплатная доставка по России
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--more">
+            <a class="link link--menu" href="#">
+              Распродажа
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--more">
+            <a class="link link--menu" href="#">
+              Новые поступления
             </a>
           </li>
         </ul>
@@ -207,5 +222,6 @@
       </form>
     </div>
   </section>
+  <script src="js/app.js"></script>
   </body>
 </html>

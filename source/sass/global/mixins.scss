@@ -15,8 +15,10 @@
 }
 
 @mixin wrapper() {
-  margin: 0 auto;
-  padding: 0 $wrapper-padding-sm;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $wrapper-padding-sm;
+  padding-right: $wrapper-padding-sm;
 }
 
 @mixin text-size($font-size, $line-height) {

@@ -1,7 +1,47 @@
+.main-nav {
+  display: grid;
+  grid-template-rows: $header-height min-content;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: min-content;
+  }
+}
+
 .main-nav__list {
   @include list-unset();
 
-  margin: 0;
+  margin: 0 -#{$wrapper-padding-sm};
+  background-color: $color-gray-lightest;
+  display: none;
+
+  &--visible {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "logo logo top-right-1 top-right-2"
+      "bottom-left-1 bottom-left-2 . bottom-right";
+    grid-template-columns: max-content 1fr max-content max-content;
+    margin: 0;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas:
+      "top-left-1 top-left-2 logo top-right-1 top-right-2"
+      "bottom-left-1 bottom-left-2 . . bottom-right";
+    grid-template-columns: max-content max-content 1fr max-content max-content;
+  }
+
+  &::before {
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      grid-area: logo;
+    }
+  }
 }
 
 .main-nav__item {
@@ -9,19 +49,86 @@
 
   border-top: 1px solid $color-gray-medium;
   border-bottom: 1px solid $color-gray-medium;
+  padding: 9px 0 7px;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+    place-self: start;
+  }
+
+  &--cart {
+    @media (min-width: $tablet-width) {
+      grid-area: top-right-2;
+      place-self: end;
+      border-left: 1px solid $color-gray-medium;
+    }
+  }
+
+  &--search {
+    @media (min-width: $tablet-width) {
+      grid-area: top-right-1;
+      border-left: 1px solid $color-gray-medium;
+    }
+  }
+
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      grid-area: bottom-left-1;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-area: top-left-1;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      grid-area: bottom-left-2;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-area: top-left-2;
+    }
+  }
+
+  &--delivery {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      grid-area: bottom-right;
+      padding: 0;
+    }
+  }
+
+  &--more {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+
+      @include text-size(15px, 24px);
+      padding: 0;
+    }
+  }
 }
 
 .main-nav__toggle {
   width: 20px;
-  height: 14px;
+  height: 40px;
   background-color: transparent;
   border: none;
   background-image: url("../../img/icons/menu.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  place-self: center end;
 
   &--close {
     background-image: url("../../img/icons/menu-close.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
