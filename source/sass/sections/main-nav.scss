@@ -1,6 +1,6 @@
 .main-nav {
   display: grid;
-  grid-template-rows: $header-height min-content;
+  grid-template-rows: #{$header-height} min-content;
 
   @media (min-width: $tablet-width) {
     grid-template-rows: min-content;

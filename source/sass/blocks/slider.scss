@@ -1,3 +1,7 @@
+.slider__controls {
+  display: flex;
+}
+
 .slider__prev,
 .slider__next {
   @include color-scheme(transparent, $color-gray-dark, $color-gray-medium);

@@ -8,10 +8,17 @@
 
   font-weight: 700;
   color: $color-gray-dark;
+  display: grid;
+  gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 65px;
+  }
 }
 
 .advantages__item {
-  padding: 50px 20px 20px 50px;
+  padding: 50px 20px 20px 0;
   background-image: url("../img/icons/advantage-1.svg");
   background-repeat: no-repeat;
 
