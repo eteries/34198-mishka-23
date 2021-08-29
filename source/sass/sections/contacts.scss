@@ -5,28 +5,37 @@
 .contacts__wrapper {
   @include wrapper();
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-areas:
+      "top-left right"
+      "center-left right"
+      "bottom-left right";
+    grid-template-columns: 470px 1fr;
+    gap: 0 60px;
   }
 }
 
 .contacts__action {
-  width: 100%;
+  display: flex;
+  margin: 40px auto 10px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 
   @media (min-width: $desktop-width) {
-    width: auto;
     margin-left: 110px;
+    grid-area: bottom-left;
   }
 }
 
 .contacts__list {
   @include text-size(14px, 30px);
-  flex: 1;
 
   @media (min-width: $desktop-width) {
     margin-left: 110px;
-    flex: 0 0 360px;
+    grid-area: center-left;
   }
 }
 
@@ -35,16 +44,15 @@
 }
 
 .contacts__map {
-  width: calc(100% + 60px);
+  @include outer();
+
   height: 454px;
   border: none;
-  margin-left: -30px;
-  margin-right: -30px;
 
   @media (min-width: $desktop-width) {
-    width: auto;
-    flex: 1;
-    margin: 0 0 0 60px;
+    width: 100%;
+    grid-area: right;
+    margin: 0;
   }
 }
 
@@ -63,5 +71,6 @@
   @media (min-width: $desktop-width) {
     background-position: top left;
     padding-left: 110px;
+    grid-area: top-left;
   }
 }

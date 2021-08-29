@@ -7,7 +7,10 @@
 .input__control {
   @include text-size(17px, 18px);
 
+  display: block;
+  width: 100%;
   color: $color-gray-darkest;
+  background-color: transparent;
   min-height: 52px;
   border: none;
   border-bottom: 2px solid $color-gray-darkest;

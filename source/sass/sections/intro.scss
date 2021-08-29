@@ -38,19 +38,7 @@
     margin-top: 372px;
   }
 
-  &::after {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -10px;
-      height: 24px;
-      background-image: url("../img/zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-position: center;
-    }
-  }
+  @include zigzag();
 }
 
 .intro__categories-item {

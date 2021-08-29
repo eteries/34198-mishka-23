@@ -15,6 +15,9 @@
   &--inner {
     background-color: $color-gray-light;
     padding: 73px 23px;
+    margin: 0;
     text-align: center;
+
+    @include zigzag();
   }
 }

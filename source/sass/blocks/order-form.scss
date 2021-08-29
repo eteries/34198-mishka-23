@@ -1,5 +1,14 @@
 .order-form {
   padding: 17px 0 55px;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -139px;
+  }
 }
 
 .order-form__wrapper {
@@ -10,19 +19,38 @@
   @include text-size(13px, 24px);
 
   margin: 0 0 29px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 668px;
+    margin: 0 auto 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 830px;
+    padding-left: 130px;
+  }
 }
 
-.order-form__legend {
-  @include text-size(17px, 16px);
+.order-form__title {
+  @include text-size(17px, 1);
 
   color: $color-green-medium;
+  background-color: $color-gray-lightest;
   min-width: 58px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
+  margin: -9px 0 0;
+  padding-right: 20px;
+  width: max-content;
+
+  @media (min-width: $tablet-width) {
+    grid-area: title;
+    margin-top: 20px;
+    background-color: transparent;
+  }
 }
 
-.order-form__fieldset {
+.order-form__group {
   border: none;
   border-top: 1px solid $color-green-medium;
   padding: 0;
@@ -30,6 +58,45 @@
 
   &:last-child {
     margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    border-top: none;
+    grid-template-columns: 1fr 170px 500px 1fr;
+    grid-template-areas: ". title controls .";
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 130px 700px 1fr;
+  }
+
+  &--highlighted {
+    @media (min-width: $tablet-width) {
+      background-color: $color-gray-light;
+    }
+  }
+}
+
+.order-form__controls-list {
+  @include list-unset();
+
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-area: controls;
+  }
+
+  &--columns {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
 
@@ -39,4 +106,33 @@
   &:last-child {
     margin: 20px 0 0;
   }
+
+  @media (min-width: $tablet-width) {
+    &:last-child {
+      margin: 20px 0;
+    }
+  }
+}
+
+.order-form__footer {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas: ". submit required .";
+    grid-template-columns: 1fr 230px 438px 1fr;
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas: ". . submit required .";
+    grid-template-columns: 1fr 128px 230px 470px 1fr;
+  }
+}
+
+.order-form__submit {
+  grid-area: submit;
+}
+
+.order-form__required {
+  grid-area: required;
+  place-self: flex-end;
 }
