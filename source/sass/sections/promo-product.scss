@@ -15,7 +15,7 @@
       "action image image";
 
     grid-template-columns: 1fr 234px min-content;
-    gap: 0 40px;
+    gap: 0 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,7 +26,7 @@
       ". price image"
       ". action image";
 
-    grid-template-columns: min-content 1fr 525px;
+    grid-template-columns: 132px 1fr 525px;
   }
 }
 
@@ -53,6 +53,10 @@
   @media (min-width: $tablet-width) {
     grid-area: label;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 10px 0 0 32px;
   }
 }
 
@@ -85,5 +89,6 @@
 
   @media (min-width: $desktop-width) {
     place-self: start;
+    margin-left: 15px;
   }
 }

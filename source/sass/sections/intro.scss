@@ -24,6 +24,14 @@
   max-width: 240px;
   margin: 20px auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+  }
 }
 
 .intro__categories-list {

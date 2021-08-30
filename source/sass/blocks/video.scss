@@ -48,8 +48,13 @@
 }
 
 .video__poster {
-  margin: 0 0 41px;
+  margin-left: -35px;
+  margin-right: -35px;
   grid-area: poster;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 41px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;

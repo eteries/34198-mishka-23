@@ -1,12 +1,3 @@
-.testimonials {
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/review-bg.jpg");
-    background-repeat: no-repeat;
-    min-height: 350px;
-    padding: 82px 47px;
-  }
-}
-
 .testimonials__wrapper {
   @include wrapper();
 
@@ -18,6 +9,17 @@
       "bottom-left bottom-right";
     grid-template-columns: 1fr min-content;
     grid-template-rows: repeat(3, min-content);
+    background-image: url("../img/review-bg.jpg");
+    background-repeat: no-repeat;
+    min-height: 350px;
+    padding: 82px 50px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    padding-left: 225px;
+    background-position: 50px 0;
   }
 }
 
@@ -27,6 +29,7 @@
 
 .testimonials__write {
   grid-area: top-right;
+  place-self: center;
 }
 
 .testimonials__list {
