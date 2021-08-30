@@ -4,6 +4,10 @@
   font-weight: 700;
   color: $color-gray-darkest;
 
+  @media (min-width: $tablet-width) {
+    @include text-size(43px, 50px);
+  }
+
   &--size-sm {
     @include text-size(17px, 24px);
   }
@@ -19,5 +23,9 @@
     text-align: center;
 
     @include zigzag();
+
+    @media (min-width: $tablet-width) {
+      padding: 100px 50px;
+    }
   }
 }

@@ -44,10 +44,17 @@
 }
 
 .contacts__map {
-  @include outer();
-
+  margin-left: -$wrapper-padding-sm;
+  margin-right: -$wrapper-padding-sm;
+  width: calc(100% + #{$wrapper-padding-sm} * 2);
   height: 454px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -$wrapper-padding-md;
+    margin-right: -$wrapper-padding-md;
+    width: calc(100% + #{$wrapper-padding-md} * 2);
+  }
 
   @media (min-width: $desktop-width) {
     width: 100%;

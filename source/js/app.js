@@ -14,6 +14,10 @@
   const orderButton = document.querySelector('.promo-product__action');
   const submitButton = document.querySelector('.cart-form__submit');
 
+  if (!modal || !orderButton || !submitButton) {
+    return;
+  }
+
   const orderButtonClickHandler = () => {
     modal.classList.add('modal--open');
   }
