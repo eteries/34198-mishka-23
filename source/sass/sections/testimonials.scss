@@ -1,5 +1,46 @@
 .testimonials__wrapper {
   @include wrapper();
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "top-left top-right"
+      "center center"
+      "bottom-left bottom-right";
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: repeat(3, min-content);
+    background-image: url("../img/review-bg.jpg");
+    background-repeat: no-repeat;
+    min-height: 350px;
+    padding: 82px 50px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    padding-left: 225px;
+    background-position: 50px 0;
+  }
+}
+
+.testimonials__title {
+  grid-area: top-left;
+}
+
+.testimonials__write {
+  grid-area: top-right;
+  place-self: center;
+}
+
+.testimonials__list {
+  grid-row: center / bottom-left;
+  grid-column: center / center;
+  z-index: 1;
+}
+
+.testimonials__controls {
+  grid-area: bottom-right;
+  margin: 0;
 }
 
 .testimonials__text {
@@ -15,4 +56,8 @@
 
 .testimonials__user-name {
   @include text-size(17px, 30px);
+}
+
+.testimonials__item {
+  margin: 10px 0;
 }

@@ -4,10 +4,42 @@
 
 .promo-product__wrapper {
   @include wrapper();
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "title title label"
+      "description image image"
+      "features image image"
+      "price image image"
+      "action image image";
+
+    grid-template-columns: 1fr 234px min-content;
+    gap: 0 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas:
+      "label title image"
+      ". description image"
+      ". features image"
+      ". price image"
+      ". action image";
+
+    grid-template-columns: 132px 1fr 525px;
+  }
 }
 
 .promo-product__title {
   margin: 0 0 3px;
+  grid-area: title;
+
+  @media (min-width: $desktop-width) {
+    @include text-size(53px, 57px);
+
+    grid-area: title / title / title / image;
+    z-index: 2;
+  }
 }
 
 .promo-product__label {
@@ -17,18 +49,46 @@
   text-transform: uppercase;
   color: $color-green-medium;
   margin: 0 0 18px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: label;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 10px 0 0 32px;
+  }
 }
 
 .promo-product__description {
   @include text-size(15px, 24px);
+
+  grid-area: description;
 }
 
 .promo-product__features {
   @include text-size(15px, 20px);
+
+  grid-area: features;
 }
 
 .promo-product__price {
   @include text-size(17px, 24px);
 
+  grid-area: price;
   font-weight: 700;
+}
+
+.promo-product__action {
+  grid-area: action;
+}
+
+.promo-product__image {
+  grid-area: image;
+  place-self: start end;
+
+  @media (min-width: $desktop-width) {
+    place-self: start;
+    margin-left: 15px;
+  }
 }

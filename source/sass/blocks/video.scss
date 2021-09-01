@@ -3,31 +3,66 @@
   padding: 21px 34px 33px;
   margin: 0 0 51px;
 
-  &:hover {
-    border-color: $color-green-medium;
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "description"
+      "poster"
+      "action";
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-areas:
+      "poster title"
+      "poster description"
+      "poster action"
+      "poster .";
+    grid-template-columns: 683px 1fr;
+    grid-template-rows: repeat(3, min-content) 1fr;
+    gap: 0 79px;
   }
 }
 
 .video__title {
   padding: 0 0 0 57px;
-  background-image: url("../../img/icons/camera.svg");
+  background-image: url("../img/icons/camera.svg");
   background-repeat: no-repeat;
+  grid-area: title;
 }
 
 .video__description {
   @include text-size(13px, 24px);
+
+  grid-area: description;
 }
 
-.video__play {
-  margin: 0 0 41px;
+.video__poster {
+  margin-left: -35px;
+  margin-right: -35px;
+  grid-area: poster;
 
-  &::after {
-    content: "";
-    display: block;
-    width: 101px;
-    height: 77px;
-    background-image: url("../../img/icons/play.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+  @media (min-width: $tablet-width) {
+    margin: 0 0 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.video__button {
+  width: 100%;
+  grid-area: action;
+  margin-top: 20px;
 }

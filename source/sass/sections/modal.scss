@@ -1,11 +1,24 @@
 .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+
   &--open {
+    display: flex;
     background-color: rgba($color-gray-lightest, 0.9);
   }
 }
 
 .modal__dialog {
+  margin: auto;
   padding: 28px 30px 36px;
+  background-color: $color-gray-lightest;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 }
 
 .modal__title {

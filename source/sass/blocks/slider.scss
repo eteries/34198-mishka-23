@@ -1,8 +1,12 @@
+.slider__controls {
+  display: flex;
+}
+
 .slider__prev,
 .slider__next {
   @include color-scheme(transparent, $color-gray-dark, $color-gray-medium);
 
-  background-image: url("../../img/icons/arrow-left-lg.svg");
+  background-image: url("../img/icons/arrow-left-lg.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 50%;
@@ -21,5 +25,5 @@
 }
 
 .slider__next {
-  background-image: url("../../img/icons/arrow-right-lg.svg");
+  background-image: url("../img/icons/arrow-right-lg.svg");
 }

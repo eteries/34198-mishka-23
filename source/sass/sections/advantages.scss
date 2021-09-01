@@ -2,40 +2,57 @@
   @include wrapper();
 }
 
+.advantages__title {
+  @media (min-width: $desktop-width) {
+    margin-left: 175px;
+  }
+}
+
 .advantages__list {
   @include list-unset();
   @include text-size(17px, 20px);
 
   font-weight: 700;
   color: $color-gray-dark;
+  display: grid;
+  gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 175px;
+  }
 }
 
 .advantages__item {
-  padding: 50px 20px 20px 50px;
-  background-image: url("../../img/icons/advantage-1.svg");
+  padding: 50px 20px 20px 0;
+  background-image: url("../img/icons/advantage-1.svg");
   background-repeat: no-repeat;
 
   &--eco {
-    background-image: url("../../img/icons/advantage-1.svg");
+    background-image: url("../img/icons/advantage-1.svg");
   }
 
   &--knit {
-    background-image: url("../../img/icons/advantage-2.svg");
+    background-image: url("../img/icons/advantage-2.svg");
   }
 
   &--price {
-    background-image: url("../../img/icons/advantage-3.svg");
+    background-image: url("../img/icons/advantage-3.svg");
   }
 
   &--support {
-    background-image: url("../../img/icons/advantage-4.svg");
+    background-image: url("../img/icons/advantage-4.svg");
   }
 
   &--like {
-    background-image: url("../../img/icons/advantage-5.svg");
+    background-image: url("../img/icons/advantage-5.svg");
   }
 
   &--present {
-    background-image: url("../../img/icons/advantage-6.svg");
+    background-image: url("../img/icons/advantage-6.svg");
   }
 }

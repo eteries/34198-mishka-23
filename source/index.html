@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
-  <header class="page-header">
+  <header class="page__header page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo">
         <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
@@ -16,11 +17,11 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="link link--menu" href="catalog.html">Каталог товаров</a>
+          <li class="main-nav__item main-nav__item--catalog">
+            <a class="link link--catalog" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item">
-            <a class="link link--menu" href="form.html">Вязание на заказ</a>
+          <li class="main-nav__item main-nav__item--form">
+            <a class="link link--form" href="form.html">Вязание на заказ</a>
           </li>
           <li class="main-nav__item main-nav__item--search">
             <a class="link link--menu" href="#">
@@ -36,6 +37,21 @@
                 <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
               Корзина: пока пуста
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--delivery">
+            <a class="link link--delivery" href="#">
+              Бесплатная доставка по России
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--more">
+            <a class="link link--menu" href="#">
+              Распродажа
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--more">
+            <a class="link link--menu" href="#">
+              Новые поступления
             </a>
           </li>
         </ul>
@@ -58,10 +74,9 @@
     </section>
     <section class="promo-product">
       <div class="promo-product__wrapper">
-        <header class="promo-product__header">
-          <h2 class="promo-product__title">Вязаные корзинки</h2>
-          <p class="promo-product__label">Товар недели</p>
-        </header>
+        <h2 class="promo-product__title title">Вязаные корзинки</h2>
+        <p class="promo-product__label">Товар недели</p>
+        <img class="promo-product__image" src="img/triple-set-mobile.jpg" alt="Набор из трёх корзинок" width="260" height="315">
         <p class="promo-product__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
         </p>
@@ -138,11 +153,7 @@
             <address class="contacts__address">г. Санкт-Петербург<br>ул. Большая Конюшенная<br>д. 19/8, офис 101</address>
           </dd>
         </dl>
-      </div>
-      <div class="contacts__map">
-        <img src="img/map.png" width="320" height="455" alt="«Мишка» на карте">
-      </div>
-      <div class="contacts__wrapper">
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6000686667578!2d30.321008016070607!3d59.938778181876195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2sDokhodnyy%20Dom%20N.%20A.%20Mel&#39;tsera!5e0!3m2!1sen!2sru!4v1629827994132!5m2!1sen!2sru" allowfullscreen="" loading="lazy"></iframe>
         <a class="contacts__action button" href="#">Напишите нам</a>
       </div>
     </section>
@@ -207,5 +218,6 @@
       </form>
     </div>
   </section>
+  <script src="js/app.js"></script>
   </body>
 </html>

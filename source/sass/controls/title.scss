@@ -4,17 +4,32 @@
   font-weight: 700;
   color: $color-gray-darkest;
 
+  @media (min-width: $tablet-width) {
+    @include text-size(43px, 50px);
+  }
+
   &--size-sm {
     @include text-size(17px, 24px);
   }
 
   &--size-lg {
     @include text-size(27px, 30px);
+
+    @media (min-width: $tablet-width) {
+      @include text-size(53px, 57px);
+    }
   }
 
   &--inner {
     background-color: $color-gray-light;
     padding: 73px 23px;
+    margin: 0;
     text-align: center;
+
+    @include zigzag();
+
+    @media (min-width: $tablet-width) {
+      padding: 100px 50px;
+    }
   }
 }

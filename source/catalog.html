@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка - Каталог</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page__body">
-<header class="page-header"  >
+<header class="page__header page-header">
   <div class="page-header__wrapper">
     <a class="page-header__logo" href="index.html">
       <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
@@ -16,11 +17,11 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="link link--menu">Каталог товаров</a>
+        <li class="main-nav__item main-nav__item--catalog">
+          <a class="link link--catalog">Каталог товаров</a>
         </li>
-        <li class="main-nav__item">
-          <a class="link link--menu" href="form.html">Вязание на заказ</a>
+        <li class="main-nav__item main-nav__item--form">
+          <a class="link link--form" href="form.html">Вязание на заказ</a>
         </li>
         <li class="main-nav__item main-nav__item--search">
           <a class="link link--menu" href="#">
@@ -38,6 +39,21 @@
             Корзина: пока пуста
           </a>
         </li>
+        <li class="main-nav__item main-nav__item--delivery">
+          <a class="link link--delivery" href="#">
+            Бесплатная доставка по России
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--more">
+          <a class="link link--menu" href="#">
+            Распродажа
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--more">
+          <a class="link link--menu" href="#">
+            Новые поступления
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -47,65 +63,71 @@
   <div class="main__wrapper">
     <ul class="products-list">
       <li class="products-list__item product">
-        <a class="product__image" href="#">
-          <img src="img/photo-1-mobile.jpg" width="260" height="195" alt="Вязанная игрушка «Зайчик-попрыгайчик»">
+        <a href="#">
+          <img class="product__image" src="img/photo-1-mobile.jpg" width="260" height="195" alt="Вязанная игрушка «Зайчик-попрыгайчик»">
         </a>
         <div class="product__info">
           <a class="product__title-link" href="#">
             <h3 class="title title--size-sm product__title">Зайчик-попрыгайчик</h3>
           </a>
           <p class="product__description">Рост 30 см, вес 200 г</p>
-          <b class="product__price">1 200 руб.</b>
-          <a class="product__order icon-button icon-button--cart" href="#">
-            <svg class="main-nav__item-icon" width="16" height="16">
-              <use xlink:href="img/sprite.svg#icon-cart"></use>
-            </svg>
-            <span class="visually-hidden">Добавить в корзину</span>
-          </a>
+          <footer class="product__footer">
+            <b class="product__price">1 200 руб.</b>
+            <a class="product__order icon-button icon-button--cart" href="#">
+              <svg class="main-nav__item-icon" width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в корзину</span>
+            </a>
+          </footer>
         </div>
       </li>
       <li class="products-list__item product">
-        <a class="product__image" href="#">
-          <img src="img/photo-2-mobile.jpg" width="260" height="195" alt="Вязанная корзинка малая">
+        <a href="#">
+          <img class="product__image" src="img/photo-2-mobile.jpg" width="260" height="195" alt="Вязанная корзинка малая">
         </a>
         <div class="product__info">
           <a class="product__title-link" href="#">
             <h3 class="title title--size-sm product__title">Корзинка для белья</h3>
           </a>
           <p class="product__description">Диаметр 15 см, высота 10 см</p>
-          <b class="product__price">690 руб.</b>
-          <a class="product__order icon-button icon-button--cart" href="#">
-            <svg class="main-nav__item-icon" width="16" height="16">
-              <use xlink:href="img/sprite.svg#icon-cart"></use>
-            </svg>
-            <span class="visually-hidden">Добавить в корзину</span>
-          </a>
+          <footer class="product__footer">
+            <b class="product__price">690 руб.</b>
+            <a class="product__order icon-button icon-button--cart" href="#">
+              <svg class="main-nav__item-icon" width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в корзину</span>
+            </a>
+          </footer>
         </div>
       </li>
       <li class="products-list__item product">
-        <a class="product__image" href="#">
-          <img src="img/photo-3-mobile.jpg" width="260" height="195" alt="Вязанная корзинка большая">
+        <a href="#">
+          <img class="product__image" src="img/photo-3-mobile.jpg" width="260" height="195" alt="Вязанная корзинка большая">
         </a>
         <div class="product__info">
           <a class="product__title-link" href="#">
             <h3 class="title title--size-sm product__title">Большая корзинка для&nbsp;игрушек</h3>
           </a>
           <p class="product__description">Диаметр 30 см, высота 30 см</p>
-          <b class="product__price">1 500 руб.</b>
-          <a class="product__order icon-button icon-button--cart" href="#">
-            <svg class="main-nav__item-icon" width="16" height="16">
-              <use xlink:href="img/sprite.svg#icon-cart"></use>
-            </svg>
-            <span class="visually-hidden">Добавить в корзину</span>
-          </a>
+          <footer class="product__footer">
+            <b class="product__price">1 500 руб.</b>
+            <a class="product__order icon-button icon-button--cart" href="#">
+              <svg class="main-nav__item-icon" width="16" height="16">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="visually-hidden">Добавить в корзину</span>
+            </a>
+          </footer>
         </div>
       </li>
     </ul>
     <section class="video">
       <h2 class="video__title title title--size-sm">Процесс производства</h2>
       <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <a class="video__play" href="#">
-        <img class="video__poster" src="img/video-mobile.jpg" width="260" height="150" alt="Видео о производстве «мишек»">
+      <a class="video__poster poster" href="#">
+        <img class="poster__preview" src="img/video-mobile.jpg" width="260" height="150" alt="Видео о производстве «мишек»">
       </a>
       <a class="video__button button" href="form.html">Сделать заказ</a>
     </section>
@@ -154,7 +176,7 @@
   </div>
 </footer>
 
-<section class="modal modal--open">
+<section class="modal">
   <div class="modal__dialog">
     <h2 class="modal__title">Добавить в корзину</h2>
     <form class="modal__body cart-form" action="https://echo.htmlacademy.ru" method="post">
@@ -171,5 +193,6 @@
     </form>
   </div>
 </section>
+<script src="js/app.js"></script>
 </body>
 </html>

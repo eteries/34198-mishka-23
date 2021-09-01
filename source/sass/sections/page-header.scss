@@ -1,3 +1,34 @@
+.page-header {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $color-gray-medium;
+  }
+}
+
 .page-header__wrapper {
   @include wrapper();
+
+  display: grid;
+  grid-template-rows: $header-height min-content;
+  grid-template-areas:
+    "top"
+    "bottom";
+}
+
+.page-header__logo {
+  grid-area: top;
+  place-self: center;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    place-self: center start;
+  }
+
+  @media (min-width: $desktop-width) {
+    place-self: center;
+  }
+}
+
+.page-header__nav {
+  grid-area: top / bottom;
+  z-index: 1;
 }

@@ -19,8 +19,13 @@
 .link--menu {
   display: block;
   width: 100%;
-  padding: 29px 30px 27px;
+  padding: 20px 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .link--email {
@@ -37,5 +42,35 @@
     color: $color-green-medium;
     text-decoration: none;
     opacity: 1;
+  }
+}
+
+.link--delivery {
+  @include text-size(15px, 24px);
+
+  font-weight: 400;
+  display: block;
+  padding: 20px 0;
+}
+
+.link--catalog {
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.link--form {
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
   }
 }
