@@ -13,3 +13,13 @@
     align-items: center;
   }
 }
+
+.page-footer__copyright {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  align-items: center;
+  gap: 28px;
+  font-weight: 700;
+
+  @include text-size(19px, 1);
+}

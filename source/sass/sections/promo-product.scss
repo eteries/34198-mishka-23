@@ -1,5 +1,13 @@
 .promo-product {
   padding: 31px 0 36px;
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 0 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 43px 0 36px;
+  }
 }
 
 .promo-product__wrapper {
@@ -15,7 +23,7 @@
       "action image image";
 
     grid-template-columns: 1fr 234px min-content;
-    gap: 0 43px;
+    gap: 0 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,6 +47,7 @@
 
     grid-area: title / title / title / image;
     z-index: 2;
+    margin: 76px 0 0;
   }
 }
 
@@ -56,7 +65,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 10px 0 0 32px;
+    margin: 82px 0 0 32px;
   }
 }
 
@@ -64,12 +73,29 @@
   @include text-size(15px, 24px);
 
   grid-area: description;
+
+  @media (min-width: $tablet-width) {
+    @include text-size(17px, 30px);
+
+    margin: -5px 10px 0 0;
+  }
 }
 
 .promo-product__features {
   @include text-size(15px, 20px);
 
   grid-area: features;
+  display: grid;
+  grid-template-columns: 97px 1fr;
+  grid-template-rows: repeat(3, max-content);
+  margin: 15px 0 10px;
+}
+
+.promo-product__feature-name,
+.promo-product__feature-description {
+  padding: 6px 0 14px;
+  margin: 0;
+  border-bottom: 1px solid $color-gray-medium;
 }
 
 .promo-product__price {
@@ -77,18 +103,49 @@
 
   grid-area: price;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    place-self: end center;
+    padding-right: 15px;
+    margin: 15px 0;
+  }
 }
 
 .promo-product__action {
   grid-area: action;
+
+  @media (min-width: $desktop-width) {
+    place-self: center stretch;
+    margin-right: 15px;
+  }
 }
 
-.promo-product__image {
+.promo-product__image-box {
   grid-area: image;
   place-self: start end;
 
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: auto;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 525px;
     place-self: start;
-    margin-left: 15px;
+  }
+}
+
+.promo-product__image {
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
   }
 }

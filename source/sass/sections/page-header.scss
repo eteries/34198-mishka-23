@@ -8,10 +8,14 @@
   @include wrapper();
 
   display: grid;
-  grid-template-rows: $header-height min-content;
+  grid-template-rows: $header-height-sm min-content;
   grid-template-areas:
     "top"
     "bottom";
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: $header-height-md min-content;
+  }
 }
 
 .page-header__logo {
@@ -25,6 +29,27 @@
 
   @media (min-width: $desktop-width) {
     place-self: center;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__logo-img {
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
   }
 }
 

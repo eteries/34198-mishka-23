@@ -1,5 +1,15 @@
 .social-list {
   @include list-unset();
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social-list__item {
+  &:not(:first-child) {
+    margin-left: 40px;
+  }
 }
 
 .social-list__link {
