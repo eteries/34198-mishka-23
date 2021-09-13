@@ -7,7 +7,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -139px;
+    padding-top: 113px;
+    margin-left: -130px;
   }
 }
 
@@ -21,6 +22,8 @@
   margin: 0 0 29px;
 
   @media (min-width: $tablet-width) {
+    @include text-size(17px, 30px);
+
     max-width: 668px;
     margin: 0 auto 29px;
   }
@@ -28,6 +31,7 @@
   @media (min-width: $desktop-width) {
     max-width: 830px;
     padding-left: 130px;
+    margin: 0 auto 14px;
   }
 }
 
@@ -45,8 +49,12 @@
 
   @media (min-width: $tablet-width) {
     grid-area: title;
-    margin-top: 20px;
+    margin-top: 18px;
     background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 26px 0 0 16px;
   }
 }
 
@@ -70,12 +78,22 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 130px 700px 1fr;
+    padding: 38px;
   }
 
-  &--highlighted {
+  &--color,
+  &--tel,
+  &--email {
     @media (min-width: $tablet-width) {
       background-color: $color-gray-light;
     }
+  }
+
+  &--email {
+    @media (min-width: $desktop-width) {
+      margin-top: -75px;
+    }
+
   }
 }
 
@@ -83,6 +101,7 @@
   @include list-unset();
 
   margin: 0;
+  display: grid;
 
   @media (min-width: $tablet-width) {
     grid-area: controls;
@@ -90,7 +109,6 @@
 
   &--columns {
     @media (min-width: $tablet-width) {
-      display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -112,6 +130,15 @@
       margin: 20px 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 12px 0;
+    min-width: 260px;
+
+    &:last-child {
+      margin: 12px 0;
+    }
+  }
 }
 
 .order-form__footer {
@@ -119,7 +146,6 @@
     display: grid;
     grid-template-areas: ". submit required .";
     grid-template-columns: 1fr 230px 438px 1fr;
-    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -133,6 +159,12 @@
 }
 
 .order-form__required {
+  @include text-size(14px, 16px);
+
   grid-area: required;
   place-self: flex-end;
+
+  @media (min-width: $tablet-width) {
+    @include text-size(17px, 20px);
+  }
 }

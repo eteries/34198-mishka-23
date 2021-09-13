@@ -9,8 +9,12 @@
 <body class="page__body">
 <header class="page__header page-header">
   <div class="page-header__wrapper">
-    <a class="page-header__logo" href="index.html">
-      <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+    <a href="index.html" class="page-header__logo">
+      <picture>
+        <source srcset="img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
+        <source srcset="img/mishka-logo-tablet.svg" media="(min-width: 768px)">
+        <img src="img/mishka-logo-mobile.svg" class="page-header__logo-img" width="86" height="35" alt="Интернет-магазин «Мишка»">
+      </picture>
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button">
@@ -18,40 +22,42 @@
       </button>
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--catalog">
-          <a class="link link--catalog" href="catalog.html">Каталог товаров</a>
+          <a class="link main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="main-nav__item main-nav__item--form">
-          <a class="link link--form">Вязание на заказ</a>
+          <a class="link main-nav__link main-nav__link--form">Вязание на заказ</a>
         </li>
         <li class="main-nav__item main-nav__item--search">
-          <a class="link link--menu" href="#">
+          <a class="link main-nav__link main-nav__link--search" href="#">
             <svg class="main-nav__item-icon" width="16" height="16">
-              <use xlink:href="img/sprite.svg#icon-search"></use>
+              <use xlink:href="img/sprite.svg#search"></use>
             </svg>
             <span class="main-nav__search-text">Поиск по сайту</span>
           </a>
         </li>
         <li class="main-nav__item main-nav__item--cart">
-          <a class="link link--menu" href="#">
-            <svg class="main-nav__item-icon" width="16" height="16">
-              <use xlink:href="img/sprite.svg#icon-cart"></use>
+          <a class="link main-nav__link main-nav__link--cart" href="#">
+            <svg class="main-nav__item-icon" width="21" height="16">
+              <use xlink:href="img/sprite.svg#cart"></use>
             </svg>
-            Корзина: пока пуста
+            <span class="main-nav__cart-text">
+                Корзина: пока пуста
+              </span>
           </a>
         </li>
         <li class="main-nav__item main-nav__item--delivery">
-          <a class="link link--delivery" href="#">
+          <a class="link main-nav__link--delivery" href="#">
             Бесплатная доставка по России
           </a>
         </li>
         <li class="main-nav__item main-nav__item--more">
-          <a class="link link--menu" href="#">
-            Распродажа
+          <a class="link main-nav__link" href="#">
+            Новые поступления
           </a>
         </li>
         <li class="main-nav__item main-nav__item--more">
-          <a class="link link--menu" href="#">
-            Новые поступления
+          <a class="link main-nav__link main-nav__link--sale" href="#">
+            Распродажа
           </a>
         </li>
       </ul>
@@ -77,7 +83,7 @@
         </li>
       </ul>
     </div>
-    <div class="order-form__group order-form__group--highlighted">
+    <div class="order-form__group order-form__group--color">
       <h3 class="order-form__title">Цвет</h3>
       <ul class="order-form__controls-list order-form__controls-list--columns">
         <li class="order-form__control checkbox">
@@ -123,25 +129,25 @@
         </li>
       </ul>
     </div>
-    <div class="order-form__group order-form__group--highlighted">
+    <div class="order-form__group order-form__group--tel">
       <h3 class="order-form__title">Тел</h3>
       <ul class="order-form__controls-list">
         <li class="order-form__control input input--icon">
           <label class="input__label visually-hidden" for="user-phone">Телефон</label>
           <input class="input__control input__control--tel" type="tel" name="user-phone" id="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-          <svg class="social-list__icon" width="16" height="16">
+          <svg class="input__icon" width="25" height="24">
             <use xlink:href="img/sprite.svg#phone"></use>
           </svg>
         </li>
       </ul>
     </div>
-    <div class="order-form__group order-form__group--highlighted">
+    <div class="order-form__group order-form__group--email">
       <h3 class="order-form__title">E-Mail</h3>
       <ul class="order-form__controls-list">
         <li class="order-form__control input input--icon">
           <label class="input__label visually-hidden" for="user-mail">E-mail</label>
-          <input class="input__control input__control--email" type="tel" name="user-mail" id="user-mail" placeholder="Ваш Email*" required>
-          <svg class="social-list__icon" width="16" height="16">
+          <input class="input__control input__control--email" type="email" name="user-mail" id="user-mail" placeholder="Ваш Email*" required>
+          <svg class="input__icon" width="32" height="31">
             <use xlink:href="img/sprite.svg#mail"></use>
           </svg>
         </li>
@@ -164,32 +170,34 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <a class="page-footer__logo" href="index.html">
-      <img src="img/logo-footer.svg" width="102" height="34" alt="Интернет-магазин «Мишка»">
+    <a href="index.html" class="page-footer__logo link">
+      <svg class="social-list__icon" width="102" height="34" aria-label="Интернет-магазин «Мишка»">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
     </a>
     <section class="page-footer__social">
       <h3 class="visually-hidden">«Мишка» в социальных сетях</h3>
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="icon-button" href="https://instagram.com">
-            <svg class="social-list__icon" width="16" height="16" aria-label="Наш Instagram">
-              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+          <a class="link link--icon" href="https://instagram.com">
+            <svg width="22" height="21" aria-label="Наш Instagram">
+              <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="icon-button" href="https://facebook.com">
-            <svg class="social-list__icon" width="16" height="16" aria-label="Наш Facebook">
-              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+          <a class="link link--icon" href="https://facebook.com">
+            <svg width="15" height="28" aria-label="Наш Facebook">
+              <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="icon-button" href="https://twitter.com">
-            <svg class="social-list__icon" width="16" height="16" aria-label="Наш Twitter">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+          <a class="link link--icon" href="https://twitter.com">
+            <svg width="23" height="20" aria-label="Наш Twitter">
+              <use xlink:href="img/sprite.svg#twitter"></use>
             </svg>
             <span class="visually-hidden">Twitter</span>
           </a>
@@ -198,7 +206,10 @@
     </section>
     <p class="page-footer__copyright">
       Разработано
-      <a href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="link link--icon" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg width="28" height="35">
+          <use xlink:href="img/sprite.svg#academy"></use>
+        </svg>
         <span class="visually-hidden">HTML Academy</span>
       </a>
     </p>

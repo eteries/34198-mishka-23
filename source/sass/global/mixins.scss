@@ -40,6 +40,10 @@
 
   font-weight: 700;
   color: $color-gray-darkest;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
 }
 
 @mixin color-scheme($bg-color: inherit, $text-color: inherit, $border-color: inherit) {
@@ -87,6 +91,21 @@
     @media (min-width: $desktop-width) {
       background-image: url("../img/zigzag-line-desktop.svg");
       height: 23px;
+    }
+  }
+}
+
+@mixin zigzag-inner() {
+  @include zigzag();
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/zigzag-fill.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/zigzag-fill-desktop-inner.svg");
+      bottom: -14px;
     }
   }
 }

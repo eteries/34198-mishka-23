@@ -26,9 +26,13 @@
     margin: 0;
     text-align: center;
 
-    @include zigzag();
+    @include zigzag-inner();
 
     @media (min-width: $tablet-width) {
+      padding: 100px 50px;
+    }
+
+    @media (min-width: $desktop-width) {
       padding: 100px 50px;
     }
   }
