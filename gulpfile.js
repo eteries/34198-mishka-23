@@ -8,7 +8,6 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
-const squoosh = require("gulp-libsquoosh");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
@@ -53,7 +52,6 @@ exports.scripts = scripts;
 // Images
 const optimizeImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-    .pipe(squoosh())
     .pipe(gulp.dest("build/img"))
 }
 
