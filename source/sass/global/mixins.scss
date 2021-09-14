@@ -56,9 +56,11 @@
   position: relative;
 
   &::after {
+    content: "";
+    position: absolute;
+    height: 6px;
+
     @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
       left: 0;
       right: 0;
       bottom: -10px;
@@ -80,9 +82,14 @@
   @include zigzag();
 
   &::after {
+    top: -52px;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    background-image: url("../img/zigzag-line-mobile.svg");
+
     @media (min-width: $tablet-width) {
       top: 0;
-      bottom: auto;
       left: $wrapper-padding-md;
       right: $wrapper-padding-md;
       background-image: url("../img/zigzag-line.svg");

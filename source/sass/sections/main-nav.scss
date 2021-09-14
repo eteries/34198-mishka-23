@@ -135,8 +135,12 @@
   }
 
   &--cart {
-    padding-left: 28px;
+    padding-left: 29px;
     font-size: 17px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 28px;
+    }
   }
 
   &--catalog,
@@ -193,14 +197,14 @@
 }
 
 .main-nav__search-text {
-  margin-left: 32px;
+  margin-left: 30px;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 .main-nav__cart-text {
-  margin-left: 32px;
+  margin-left: 27px;
 }
 
 .main-nav__item-icon {
