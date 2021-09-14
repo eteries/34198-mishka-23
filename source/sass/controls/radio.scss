@@ -44,11 +44,10 @@
   display: block;
 }
 
-.radio__label:hover:before {
+.radio__label:hover::before {
   border-color: $color-green-medium;
 }
 
 .radio__label:active {
   opacity: 0.3;
 }
-
