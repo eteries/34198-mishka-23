@@ -10,12 +10,20 @@
 
   &--size-sm {
     @include text-size(17px, 24px);
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
   }
 
   &--size-lg {
     @include text-size(27px, 30px);
 
     @media (min-width: $tablet-width) {
+      @include text-size(43px, 50px);
+    }
+
+    @media (min-width: $desktop-width) {
       @include text-size(53px, 57px);
     }
   }
@@ -29,6 +37,10 @@
     @include zigzag-inner();
 
     @media (min-width: $tablet-width) {
+      padding: 100px 50px 78px;
+    }
+
+    @media (min-width: $desktop-width) {
       padding: 100px 50px;
     }
 

@@ -139,21 +139,22 @@
     font-size: 17px;
   }
 
-  &--catalog {
+  &--catalog,
+  &--form {
     padding: 20px 30px 20px 76px;
-    font-size: 17px;
 
     @media (min-width: $tablet-width) {
-      padding: 21px 0;
+      padding: 20px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 17px;
     }
   }
 
   &--form {
-    padding: 20px 30px 20px 76px;
-    font-size: 17px;
-
-    @media (min-width: $tablet-width) {
-      padding: 21px 0 21px 35px;
+    @media (min-width: $desktop-width) {
+      padding-left: 35px;
     }
   }
 

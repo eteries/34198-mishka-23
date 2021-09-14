@@ -22,6 +22,7 @@
   grid-area: preview;
 
   @media (min-width: $desktop-width) {
-    min-height: 455px;
+    width: 683px;
+    height: 455px;
   }
 }
