@@ -2,6 +2,7 @@ $font-family-primary: "Open Sans", "Arial", sans-serif;
 
 $color-green-medium: #63d1bb;
 $color-green-dark: #56c3b2;
+$color-green-darkest: #46c1ae;
 
 $color-gray-lightest: #ffffff;
 $color-gray-light: #f1f1f1;
@@ -12,7 +13,8 @@ $color-gray-darkest: #000000;
 $wrapper-padding-sm: 30px;
 $wrapper-padding-md: 50px;
 
-$header-height: 79px;
+$header-height-sm: 79px;
+$header-height-md: 89px;
 
 $tablet-width: 768px;
 $desktop-width: 1150px;

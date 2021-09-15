@@ -2,8 +2,11 @@
   const toggle = document.querySelector('.main-nav__toggle');
   const menu = document.querySelector('.main-nav__list');
 
+  menu.classList.remove('main-nav__list--visible');
+
   const handleToggleClick = () => {
-    menu.classList.toggle('main-nav__list--visible')
+    menu.classList.toggle('main-nav__list--visible');
+    toggle.classList.toggle('main-nav__toggle--close');
   };
 
   toggle.addEventListener('click', handleToggleClick);

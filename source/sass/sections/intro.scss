@@ -1,18 +1,37 @@
 .intro {
   padding: 53px 0 0;
+  background-color: #f9f9f9;
   background-image: url("../img/intro-mobile.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 373px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-mobile@2x.jpg");
+    background-size: 569px 373px;
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/intro-tablet.jpg");
     min-height: 758px;
     padding: 155px 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-tablet@2x.jpg");
+      background-size: 1137px 746px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/intro-desktop.jpg");
+    padding: 139px 0 0;
+
+    @include zigzag();
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-desktop@2x.jpg");
+      background-size: 1150px 746px;
+    }
   }
 }
 
@@ -22,31 +41,33 @@
 
 .intro__title {
   max-width: 240px;
-  margin: 20px auto;
+  min-height: 193px;
+  margin: 20px auto 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     max-width: 668px;
+    min-height: 468px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 700px;
+    min-height: 467px;
   }
 }
 
 .intro__categories-list {
   @include list-unset();
 
-  margin-top: 120px;
+  margin-left: -#{$wrapper-padding-sm};
+  margin-right: -#{$wrapper-padding-sm};
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    margin-top: 372px;
+    margin: 0;
   }
-
-  @include zigzag();
 }
 
 .intro__categories-item {
@@ -54,21 +75,31 @@
   background-repeat: no-repeat;
   background-position: center right 20px;
 
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 0 $color-green-medium;
+  }
+
   &--interior {
-    background-image: url("../img/icons/link-interior.svg");
-    background-position: center right 30px;
+    background-image: url("../img/link-interior.svg");
+    background-position: center right 36px;
 
     @media (min-width: $tablet-width) {
-      background-position: top 30px right 30px;
+      background-position: top 30px right 37px;
     }
   }
 
   &--toy {
-    background-image: url("../img/icons/link-toy.svg");
+    background-image: url("../img/link-toy.svg");
     background-color: $color-green-dark;
+    background-position: top 31px right 27px;
+
+    &:hover {
+      box-shadow: 0 5px 0 $color-green-dark;
+    }
 
     @media (min-width: $tablet-width) {
-      background-position: top 31px right 30px;
+      background-position: top 31px right 29px;
     }
   }
 
@@ -83,13 +114,15 @@
   display: grid;
   grid-template-columns: min-content;
   min-height: 79px;
-  padding: 20px 100px 20px 20px;
+  padding: 24px 100px 30px 28px;
   font-weight: 700;
   color: $color-gray-lightest;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 167px 46px 36px;
+    @include text-size(20px, 30px);
+
+    padding: 25px 167px 35px 36px;
   }
 
   &:hover {

@@ -1,11 +1,12 @@
 .button {
-  @include color-scheme($color-gray-lightest, $color-gray-dark, $color-gray-medium);
+  @include color-scheme($color-gray-lightest, $color-gray-dark, $color-gray-dark);
   @include text-size(17px, 20px);
 
   display: inline-flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-transform: uppercase;
   padding: 10px 26px;
   font-weight: 700;
   text-decoration: none;
