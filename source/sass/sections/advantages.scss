@@ -61,7 +61,7 @@
 
 .advantages__item {
   padding: 53px 20px 20px 0;
-  background-image: url("../../img/advantage-1.svg");
+  background-image: url("../img/advantage-1.svg");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -71,7 +71,7 @@
   }
 
   &--eco {
-    background-image: url("../../img/advantage-1.svg");
+    background-image: url("../img/advantage-1.svg");
     background-position: 7px 0;
 
     @media (min-width: $tablet-width) {
@@ -80,7 +80,7 @@
   }
 
   &--knit {
-    background-image: url("../../img/advantage-2.svg");
+    background-image: url("../img/advantage-2.svg");
     background-position: 3px 1px;
 
     @media (min-width: $tablet-width) {
@@ -89,7 +89,7 @@
   }
 
   &--price {
-    background-image: url("../../img/advantage-3.svg");
+    background-image: url("../img/advantage-3.svg");
 
     @media (min-width: $tablet-width) {
       order: 3;
@@ -97,7 +97,7 @@
   }
 
   &--support {
-    background-image: url("../../img/advantage-4.svg");
+    background-image: url("../img/advantage-4.svg");
 
     @media (min-width: $tablet-width) {
       order: 4;
@@ -106,7 +106,7 @@
   }
 
   &--like {
-    background-image: url("../../img/advantage-5.svg");
+    background-image: url("../img/advantage-5.svg");
     background-position: 8px 2px;
 
     @media (min-width: $tablet-width) {
@@ -115,7 +115,7 @@
   }
 
   &--present {
-    background-image: url("../../img/advantage-6.svg");
+    background-image: url("../img/advantage-6.svg");
     background-position: 3px 0;
 
     @media (min-width: $tablet-width) {

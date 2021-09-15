@@ -8,7 +8,7 @@
 .slider__next {
   @include color-scheme(transparent, $color-gray-dark, $color-gray-medium);
 
-  background-image: url("../../img/arrow-left-lg.svg");
+  background-image: url("../img/arrow-left-lg.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 50%;
@@ -36,5 +36,5 @@
 }
 
 .slider__next {
-  background-image: url("../../img/arrow-right-lg.svg");
+  background-image: url("../img/arrow-right-lg.svg");
 }
