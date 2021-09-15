@@ -25,10 +25,12 @@
 
   @media (min-width: $tablet-width) {
     place-self: center start;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
     place-self: center;
+    margin-top: 8px;
   }
 
   &:hover,

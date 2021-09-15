@@ -1,8 +1,9 @@
 .order-form {
   padding: 17px 0 55px;
-  margin: 0 20px;
+  margin: 0 30px;
 
   @media (min-width: $tablet-width) {
+    padding: 64px 0 50px;
     margin: 0;
   }
 
@@ -19,13 +20,13 @@
 .order-form__description {
   @include text-size(13px, 24px);
 
-  margin: 0 0 29px;
+  margin: 0 0 36px;
 
   @media (min-width: $tablet-width) {
     @include text-size(17px, 30px);
 
     max-width: 668px;
-    margin: 0 auto 29px;
+    margin: 0 auto 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,36 +50,58 @@
 
   @media (min-width: $tablet-width) {
     grid-area: title;
-    margin-top: 18px;
+    margin-top: 65px;
     background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
     margin: 26px 0 0 16px;
   }
+
+  &--email {
+    @media (min-width: $tablet-width) {
+      margin-top: 40px;
+    }
+  }
 }
 
 .order-form__group {
-  border: none;
   border-top: 1px solid $color-green-medium;
-  padding: 0;
-  margin: 0 0 25px;
-
-  &:last-child {
-    margin: 0;
-  }
 
   @media (min-width: $tablet-width) {
     display: grid;
     border-top: none;
     grid-template-columns: 1fr 170px 500px 1fr;
     grid-template-areas: ". title controls .";
-    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 130px 700px 1fr;
-    padding: 38px;
+    padding: 42px 0 24px;
+  }
+
+  &--type {
+    margin-bottom: 26px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--color {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--name {
+    margin-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &--color,
@@ -89,9 +112,28 @@
     }
   }
 
-  &--email {
+  &--tel {
+    margin-bottom: 41px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
     @media (min-width: $desktop-width) {
-      margin-top: -75px;
+      margin-top: 0;
+    }
+  }
+
+  &--email {
+    margin-bottom: 42px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 4px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+      margin-top: -65px;
     }
   }
 }
@@ -106,38 +148,113 @@
     grid-area: controls;
   }
 
-  &--columns {
+  &--radio {
+    margin-top: 32px;
+
     @media (min-width: $tablet-width) {
-      grid-template-columns: repeat(2, 1fr);
+      margin-top: 47px;
     }
 
     @media (min-width: $desktop-width) {
+      margin-top: 7px;
+    }
+  }
+
+  &--checkbox {
+    margin-top: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin: 49px 0 29px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 7px 0 5px;
       grid-template-columns: repeat(3, 1fr);
+      gap: 0 100px;
+    }
+  }
+
+  &--input {
+    margin-top: 29px;
+
+    @media (min-width: $tablet-width) {
+      margin: 50px 0 26px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 6px 0 4px;
+    }
+  }
+
+  &--tel {
+    margin-top: 5px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 7px;
+    }
+  }
+
+  &--email {
+    margin-top: 5px;
+
+    @media (min-width: $tablet-width) {
+      margin: 24px 0 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 24px 0 26px;
+    }
+  }
+
+  &--textarea {
+    margin-top: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin: 46px 0 52px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin: 8px 0 24px;
     }
   }
 }
 
-.order-form__control {
-  margin: 20px 0;
-
-  &:last-child {
-    margin: 20px 0 0;
-  }
+.order-form__radio {
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
-    &:last-child {
-      margin: 20px 0;
-    }
+    margin-bottom: 24px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    margin: 12px 0;
-    min-width: 260px;
+.order-form__checkbox {
+  margin-bottom: 23px;
+}
 
-    &:last-child {
-      margin: 12px 0;
-    }
+.order-form__input {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
   }
+}
+
+.order-form__tel {
+  margin-bottom: 0;
+}
+
+.order-form__email {
+  margin-bottom: 0;
+}
+
+.order-form__textarea {
+  margin-bottom: 0;
 }
 
 .order-form__footer {
@@ -155,6 +272,7 @@
 
 .order-form__submit {
   grid-area: submit;
+  width: 100%;
 }
 
 .order-form__required {
@@ -162,8 +280,10 @@
 
   grid-area: required;
   place-self: flex-end;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     @include text-size(17px, 20px);
+    margin-bottom: 16px;
   }
 }

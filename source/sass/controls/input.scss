@@ -16,7 +16,7 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-    margin: 16px 25px 0 0;
+    margin: 17px 24px 0 -2px;
     grid-area: label;
   }
 }
@@ -31,7 +31,7 @@
   height: 52px;
   border: none;
   border-bottom: 2px solid $color-gray-darkest;
-  padding: 15px 32px 15px 18px;
+  padding: 15px 32px 15px 0;
   grid-area: control;
 
   &:hover,
@@ -49,12 +49,14 @@
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
+    padding: 15px 32px 15px 18px;
   }
 }
 
 .input__control--textarea {
   border: 2px solid $color-gray-dark;
   min-height: 142px;
+  padding: 15px 32px 15px 15px;
 
   &:hover,
   &:focus {
@@ -68,14 +70,22 @@
 
 .input__icon {
   position: absolute;
-  right: 0;
+  right: 4px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
   opacity: 0.2;
 
-  .input__control:focus + & {
-    opacity: 1;
-    color: $color-green-medium;
+  @media (min-width: $tablet-width) {
+    right: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    right: 7px;
+  }
+}
+
+.input__control:focus + .input__icon {
+  opacity: 1;
+  color: $color-green-medium;
 }

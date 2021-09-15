@@ -45,8 +45,9 @@
   }
 }
 
-.link--icon {
-  color: $color-green-medium;
+.link--icon,
+.link--icon-green {
+  color: $color-gray-darkest;
 
   &:hover,
   &:focus,
@@ -57,4 +58,8 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.link--icon-green {
+  color: $color-green-darkest;
 }

@@ -23,7 +23,7 @@
     grid-template-areas:
       "logo logo top-right-1 top-right-2"
       "bottom-left-1 bottom-left-2 . bottom-right";
-    grid-template-columns: minmax(167px, max-content) 1fr 82px minmax(259px, max-content);
+    grid-template-columns: minmax(168px, max-content) 1fr 82px minmax(259px, max-content);
     grid-template-rows: $header-height-md;
     margin: 0;
     background-color: transparent;
@@ -115,10 +115,12 @@
   align-items: center;
   padding: 27px 30px 27px 75px;
 
-  @include text-size(15px, 24px);
+  @include text-size(17px, 24px);
 
   @media (min-width: $tablet-width) {
     padding: 20px 0;
+
+    font-size: 15px;
   }
 
   &--search {
@@ -136,10 +138,10 @@
 
   &--cart {
     padding-left: 29px;
-    font-size: 17px;
 
     @media (min-width: $tablet-width) {
-      padding-left: 28px;
+      padding-left: 32px;
+      font-size: 17px;
     }
   }
 
@@ -206,6 +208,10 @@
 
 .main-nav__cart-text {
   margin-left: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+  }
 }
 
 .main-nav__item-icon {
