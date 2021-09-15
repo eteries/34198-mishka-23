@@ -1,11 +1,13 @@
 .poster {
-  display: grid;
-  grid-template-areas: "preview";
+  display: block;
+  position: relative;
 
   &::after {
     content: "";
-    grid-area: preview;
-    place-self: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
     width: 101px;
     height: 77px;
@@ -19,7 +21,6 @@
   display: block;
   width: 100%;
   height: auto;
-  grid-area: preview;
 
   @media (min-width: $desktop-width) {
     width: 683px;

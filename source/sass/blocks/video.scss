@@ -1,7 +1,7 @@
 .video {
   border: 1px solid $color-gray-medium;
   padding: 21px 34px 33px;
-  margin: 0 0 51px;
+  margin: 0 0 37px;
 
   &:hover,
   &:focus {
@@ -20,6 +20,7 @@
       "description"
       "action";
     padding: 0 0 33px 0;
+    margin: 0 0 74px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,25 +34,28 @@
     grid-template-rows: repeat(3, min-content) 1fr;
     gap: 0 76px;
     padding: 0 36px 0 0;
-    margin: 22px 0 111px;
+    margin: 25px 0 105px;
   }
 }
 
 .video__title {
   background-image: url("../../img/camera.svg");
   background-repeat: no-repeat;
+  background-position: 0 12px;
   grid-area: title;
   padding-left: 57px;
+  margin: 0 0 26px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 68px;
+    padding-left: 66px;
     margin: 0 40px;
+    background-position: 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 82px 0 0;
+    padding: 96px 0 0;
     margin: 0;
-    background-position: 0 32px;
+    background-position: 0 47px;
     max-width: 230px;
   }
 }
@@ -60,25 +64,25 @@
   @include text-size(13px, 24px);
 
   grid-area: description;
+  margin-right: -20px;
 
   @media (min-width: $tablet-width) {
     @include text-size(15px, 30px);
 
-    margin: 20px 40px 43px;
+    margin: 24px 40px 43px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 9px 0 33px;
+    margin: 28px 0 53px;
   }
 }
 
 .video__poster {
-  margin-left: -35px;
-  margin-right: -35px;
+  margin: 0 -35px 35px;
   grid-area: poster;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 41px;
+    margin: 0 0 35px;
     border-bottom: 1px solid $color-gray-medium;
   }
 
@@ -91,7 +95,9 @@
 .video__button {
   width: 100%;
   grid-area: action;
-  margin-top: 20px;
+  margin: 28px 0 20px;
+  padding-left: 11px;
+  padding-right: 11px;
 
   @media (min-width: $tablet-width) {
     margin: 0 40px;

@@ -41,11 +41,7 @@
     @include zigzag-inner();
 
     @media (min-width: $tablet-width) {
-      padding: 100px 50px 78px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 100px 50px;
+      padding: 100px 50px 85px;
     }
 
     @media (min-width: $desktop-width) {

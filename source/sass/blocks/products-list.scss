@@ -1,8 +1,10 @@
 .products-list {
   @include list-unset();
 
+  margin-top: 29px;
+
   @media (min-width: $tablet-width) {
-    margin-top: 75px;
+    margin-top: 70px;
   }
 
   @media (min-width: $desktop-width) {
