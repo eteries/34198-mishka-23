@@ -1,5 +1,7 @@
 .slider__controls {
   display: flex;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .slider__prev,
@@ -25,6 +27,11 @@
 
   @media (min-width: $tablet-width) {
     border-color: transparent;
+
+    &:hover,
+    &:focus {
+      border-color: transparent;
+    }
   }
 }
 

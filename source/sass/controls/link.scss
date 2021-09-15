@@ -45,9 +45,22 @@
   }
 }
 
-.link--icon,
-.link--icon-green {
+.link--icon {
   color: $color-gray-darkest;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-green-darkest;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.link--icon-green {
+  color: $color-gray-dark;
 
   &:hover,
   &:focus,

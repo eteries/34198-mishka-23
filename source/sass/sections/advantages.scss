@@ -26,12 +26,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 17px;
-    margin: 8px 0 42px;
+    margin: 8px 0 46px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 175px;
-    margin-top: 7px;
+    margin: 7px 0 42px 175px;
     padding-top: 90px;
   }
 }
