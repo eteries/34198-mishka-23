@@ -29,7 +29,7 @@
   font-weight: 400;
   text-decoration: underline;
   text-decoration-color: $color-green-medium;
-  text-underline-offset: 10px;
+  text-underline-offset: 5px;
 
   &:hover,
   &:focus {
@@ -61,5 +61,5 @@
 }
 
 .link--icon-green {
-  color: $color-green-darkest;
+  color: $color-green-dark;
 }

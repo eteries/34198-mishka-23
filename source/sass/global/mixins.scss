@@ -63,7 +63,7 @@
     @media (min-width: $tablet-width) {
       left: 0;
       right: 0;
-      bottom: -10px;
+      bottom: 0;
       height: 24px;
       background-image: url("../img/zigzag-fill.svg");
       background-repeat: repeat-x;
@@ -90,14 +90,14 @@
 
     @media (min-width: $tablet-width) {
       top: 0;
-      left: $wrapper-padding-md;
-      right: $wrapper-padding-md;
       background-image: url("../img/zigzag-line.svg");
     }
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/zigzag-line-desktop.svg");
       height: 23px;
+      left: $wrapper-padding-md;
+      right: $wrapper-padding-md;
     }
   }
 }

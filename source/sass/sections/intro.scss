@@ -26,13 +26,13 @@
 
 .intro__title {
   max-width: 240px;
-  min-height: 194px;
+  min-height: 193px;
   margin: 20px auto 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     max-width: 668px;
-    min-height: 487px;
+    min-height: 468px;
   }
 
   @media (min-width: $desktop-width) {

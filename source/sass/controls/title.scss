@@ -8,6 +8,10 @@
     @include text-size(43px, 50px);
   }
 
+  @media (min-width: $desktop-width) {
+    @include text-size(53px, 57px);
+  }
+
   &--size-sm {
     @include text-size(17px, 24px);
 
