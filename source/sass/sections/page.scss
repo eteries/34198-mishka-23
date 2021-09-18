@@ -19,7 +19,13 @@
   height: $header-height-sm;
   position: relative;
 
+  &--no-js {
+    height: auto;
+    min-height: $header-height-sm;
+  }
+
   @media (min-width: $tablet-width) {
     height: $header-height-md;
+    min-height: $header-height-md;
   }
 }
