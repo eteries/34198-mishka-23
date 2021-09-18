@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка - Вязание на спицах - Форма заказа</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -41,12 +45,12 @@
               <use xlink:href="img/sprite.svg#cart"></use>
             </svg>
             <span class="main-nav__cart-text">
-                Корзина: пока пуста
-              </span>
+              Корзина: пока пуста
+            </span>
           </a>
         </li>
         <li class="main-nav__item main-nav__item--delivery">
-          <a class="link main-nav__link--delivery" href="#">
+          <a class="link main-nav__link main-nav__link--delivery" href="#">
             Бесплатная доставка по России
           </a>
         </li>
@@ -94,7 +98,7 @@
           <input class="checkbox__input" type="checkbox" name="color-gray" id="color-gray" checked>
           <label class="checkbox__label" for="color-gray">Серый</label>
         </li>
-        <li class="order-form__checkbox order-form__control--checkbox checkbox">
+        <li class="order-form__checkbox checkbox">
           <input class="checkbox__input" type="checkbox" name="color-tiffany" id="color-tiffany">
           <label class="checkbox__label" for="color-tiffany">«Тиффани»</label>
         </li>
@@ -170,8 +174,8 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <a href="index.html" class="page-footer__logo link link--icon">
-      <svg class="social-list__icon" width="102" height="34" aria-label="Интернет-магазин «Мишка»">
+    <a href="index.html" class="page-footer__logo link link--icon-secondary">
+      <svg width="102" height="34" aria-label="Интернет-магазин «Мишка»">
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
     </a>
@@ -179,38 +183,34 @@
       <h3 class="visually-hidden">«Мишка» в социальных сетях</h3>
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="link link--icon" href="https://instagram.com">
+          <a class="link link--icon-secondary" href="https://instagram.com">
             <svg width="22" height="21" aria-label="Наш Instagram">
               <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>
-            <span class="visually-hidden">Instagram</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="link link--icon" href="https://facebook.com">
+          <a class="link link--icon-secondary" href="https://facebook.com">
             <svg width="15" height="28" aria-label="Наш Facebook">
               <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
-            <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="link link--icon" href="https://twitter.com">
+          <a class="link link--icon-secondary" href="https://twitter.com">
             <svg width="23" height="20" aria-label="Наш Twitter">
               <use xlink:href="img/sprite.svg#twitter"></use>
             </svg>
-            <span class="visually-hidden">Twitter</span>
           </a>
         </li>
       </ul>
     </section>
     <p class="page-footer__copyright">
       Разработано
-      <a class="link link--icon-green" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg width="28" height="35">
+      <a class="link link--icon-primary" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg width="28" height="35" aria-label="HTML Academy">
           <use xlink:href="img/sprite.svg#academy"></use>
         </svg>
-        <span class="visually-hidden">HTML Academy</span>
       </a>
     </p>
   </div>

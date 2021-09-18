@@ -45,8 +45,8 @@
   }
 }
 
-.link--icon {
-  color: $color-gray-darkest;
+.link--icon-primary {
+  color: $color-green-medium;
 
   &:hover,
   &:focus,
@@ -59,8 +59,8 @@
   }
 }
 
-.link--icon-green {
-  color: $color-gray-dark;
+.link--icon-secondary {
+  color: $color-gray-darkest;
 
   &:hover,
   &:focus,
