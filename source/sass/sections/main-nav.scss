@@ -2,7 +2,14 @@
   display: grid;
   grid-template-rows: #{$header-height-sm} min-content;
 
+  &--no-js {
+    display: block;
+    padding-top: $header-height-sm;
+  }
+
   @media (min-width: $tablet-width) {
+    display: grid;
+    padding-top: 0;
     grid-template-rows: min-content;
   }
 }
@@ -14,7 +21,8 @@
   background-color: $color-gray-lightest;
   display: none;
 
-  &--visible {
+  &--open,
+  &--no-js {
     display: block;
   }
 
@@ -191,6 +199,10 @@
 
   &--close {
     background-image: url("../img/menu-close.svg");
+  }
+
+  &--no-js {
+    display: none;
   }
 
   @media (min-width: $tablet-width) {

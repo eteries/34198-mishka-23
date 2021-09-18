@@ -1,14 +1,22 @@
 (function() {
-  const toggle = document.querySelector('.main-nav__toggle');
-  const menu = document.querySelector('.main-nav__list');
+  const header = document.querySelector('.page__header');
+  const toggle = header.querySelector('.main-nav__toggle');
+  const menu = header.querySelector('.main-nav__list');
+  const nav = header.querySelector('.main-nav');
 
-  menu.classList.remove('main-nav__list--visible');
+  const setUpJSMenu = () => {
+    menu.classList.remove('main-nav__list--no-js');
+    header.classList.remove('page-header--no-js');
+    nav.classList.remove('main-nav--no-js');
+    toggle.classList.remove('main-nav__toggle--no-js');
+  }
 
   const handleToggleClick = () => {
-    menu.classList.toggle('main-nav__list--visible');
+    menu.classList.toggle('main-nav__list--open');
     toggle.classList.toggle('main-nav__toggle--close');
   };
 
+  setUpJSMenu();
   toggle.addEventListener('click', handleToggleClick);
 })();
 
