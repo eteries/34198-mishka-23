@@ -21,6 +21,15 @@
 })();
 
 (function() {
+  const mapBox = document.querySelector('.contacts__map-box');
+  const mapImage = mapBox.querySelector('.contacts__map-image');
+  const map = mapBox.querySelector('.contacts__map');
+
+  mapImage.classList.remove('contacts__map-image--no-js');
+  map.classList.remove('contacts__map--no-js');
+})();
+
+(function() {
   const modal = document.querySelector('.modal');
   const orderButton = document.querySelector('.promo-product__action');
   const submitButton = document.querySelector('.cart-form__submit');
