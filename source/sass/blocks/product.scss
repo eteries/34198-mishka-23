@@ -9,8 +9,8 @@
 }
 
 .product__info {
-  background: $color-gray-lightest;
-  border: 1px solid $color-gray-medium;
+  @include color-scheme($color-gray-lightest, $color-gray-darkest, $color-gray-medium);
+
   padding: 26px 32px 0 26px;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,7 @@
 
 .product__title {
   margin: 0 0 12px;
+  color: inherit;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -52,6 +53,15 @@
 .product__title-link {
   color: $color-gray-darkest;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba($color-gray-darkest, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-gray-darkest, 0.6);
+  }
 }
 
 .product__description {
@@ -86,7 +96,6 @@
   @include text-size(15px, 24px);
 
   font-weight: 700;
-  color: $color-gray-darkest;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -97,13 +106,13 @@
   color: $color-gray-darkest;
   opacity: 0.2;
 
-  :hover,
-  :focus {
+  &:hover,
+  &:focus {
     color: $color-green-medium;
     opacity: 1;
   }
 
-  :active {
+  &:active {
     color: $color-green-medium;
     opacity: 0.3;
   }

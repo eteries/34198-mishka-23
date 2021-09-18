@@ -72,34 +72,64 @@
 
 .intro__categories-item {
   background-color: $color-green-medium;
-  background-repeat: no-repeat;
-  background-position: center right 20px;
+  transition: 0.2s all;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 0 $color-green-medium;
+    box-shadow: 0 5px 0 $color-green-darkest;
+    background-color: $color-green-darkest;
   }
 
-  &--interior {
+  &:hover:after {
+    opacity: 0.7;
+  }
+
+  &:active:after {
+    opacity: 0.3;
+  }
+
+  &--interior:after {
     background-image: url("../img/link-interior.svg");
-    background-position: center right 36px;
+    right: 36px;
+    top: 30px;
+    width: 40px;
+    height: 62px;
 
     @media (min-width: $tablet-width) {
-      background-position: top 30px right 37px;
+      right: 36px;
+      top: 30px;
     }
   }
 
   &--toy {
-    background-image: url("../img/link-toy.svg");
     background-color: $color-green-dark;
-    background-position: top 31px right 27px;
 
-    &:hover {
-      box-shadow: 0 5px 0 $color-green-dark;
+    &:after {
+      top: 31px;
+      right: 27px;
+      width: 62px;
+      height: 62px;
+      background-image: url("../img/link-toy.svg");
+
+      @media (min-width: $tablet-width) {
+        right: 29px;
+        top: 31px;
+      }
     }
 
-    @media (min-width: $tablet-width) {
-      background-position: top 31px right 29px;
+    &:hover {
+      box-shadow: 0 5px 0 $color-green-lightest;
+      background-color: $color-green-lightest;
     }
   }
 

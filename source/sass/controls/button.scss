@@ -17,11 +17,11 @@
 
   &:hover,
   &:focus {
-    @include color-scheme($color-gray-dark, $color-gray-lightest);
+    @include color-scheme($color-gray-dark, $color-gray-lightest, $color-gray-dark);
   }
 
   &:active {
-    opacity: 0.3;
+    @include color-scheme($color-gray-dark, rgba($color-gray-lightest, 0.3), $color-gray-dark);
   }
 }
 
