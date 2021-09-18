@@ -26,7 +26,7 @@
 
   display: block;
   width: 100%;
-  color: $color-gray-darkest;
+  color: $color-gray-dark;
   background-color: transparent;
   height: 52px;
   border: none;
@@ -36,7 +36,7 @@
 
   &:hover,
   &:focus {
-    border-bottom: 2px solid $color-green-medium;
+    border-bottom: 2px solid $color-green-light;
   }
 
   &:focus {
@@ -44,7 +44,7 @@
   }
 
   ::placeholder {
-    opacity: 0.3;
+    color: ($color-gray-darkest, 0.3);
   }
 
   @media (min-width: $tablet-width) {
@@ -57,10 +57,12 @@
   border: 2px solid $color-gray-dark;
   min-height: 142px;
   padding: 15px 32px 15px 15px;
+  color: $color-gray-darkest;
+  resize: vertical;
 
   &:hover,
   &:focus {
-    border-color: $color-green-medium;
+    border-color: $color-green-light;
   }
 
   &:focus {
@@ -74,7 +76,7 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
-  opacity: 0.2;
+  color: rgba($color-gray-darkest, 0.2);
 
   @media (min-width: $tablet-width) {
     right: 24px;
@@ -85,7 +87,8 @@
   }
 }
 
-.input__control:focus + .input__icon {
-  opacity: 1;
-  color: $color-green-medium;
+.input__control:hover + .input__icon,
+.input__control:focus + .input__icon,
+.input__control:active + .input__icon {
+  color: $color-green-light;
 }

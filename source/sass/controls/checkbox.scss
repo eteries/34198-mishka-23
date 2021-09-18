@@ -1,11 +1,3 @@
-.checkbox {
-  padding-left: 61px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 80px;
-  }
-}
-
 .checkbox__input {
   @include visually-hidden();
 }
@@ -19,22 +11,23 @@
   cursor: pointer;
   user-select: none;
   min-height: 38px;
+  padding-left: 61px;
 
   &::before {
     content: "";
     position: absolute;
-    left: -61px;
+    left: 0;
     top: 0;
     width: 38px;
     height: 38px;
-    border: 2px solid $color-gray-darkest;
+    border: 2px solid $color-gray-dark;
   }
 
   &::after {
     content: "";
     position: absolute;
     top: 12px;
-    left: -53px;
+    left: 8px;
     width: 23px;
     height: 16px;
     background-image: url("../img/checkmark.svg");
@@ -45,9 +38,10 @@
 
   @media (min-width: $tablet-width) {
     min-height: 52px;
+    padding-left: 80px;
 
     &::before {
-      left: -82px;
+      left: 0;
       top: 0;
       width: 52px;
       height: 52px;
@@ -55,7 +49,7 @@
 
     &::after {
       top: 16px;
-      left: -72px;
+      left: 10px;
       width: 32px;
       height: 22px;
       background-size: 32px 22px;
@@ -68,9 +62,9 @@
 }
 
 .checkbox__label:hover::before {
-  border-color: $color-green-medium;
+  border-color: $color-green-light;
 }
 
-.checkbox__label:active {
-  opacity: 0.3;
+.checkbox__label:active::before {
+  border-color: rgba($color-gray-dark, 0.3);
 }
