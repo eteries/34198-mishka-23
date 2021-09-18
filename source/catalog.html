@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page__body">
-<header class="page__header page-header">
+<header class="page__header page__header--no-js page-header">
   <div class="page-header__wrapper">
     <a href="index.html" class="page-header__logo">
       <picture>
@@ -20,11 +20,11 @@
         <img src="img/mishka-logo-mobile.svg" class="page-header__logo-img" width="86" height="35" alt="Интернет-магазин «Мишка»">
       </picture>
     </a>
-    <nav class="page-header__nav main-nav">
-      <button class="main-nav__toggle" type="button">
+    <nav class="page-header__nav main-nav main-nav--no-js">
+      <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list">
+      <ul class="main-nav__list main-nav__list--no-js">
         <li class="main-nav__item main-nav__item--catalog">
           <a class="link main-nav__link main-nav__link--catalog">Каталог товаров</a>
         </li>
@@ -33,7 +33,7 @@
         </li>
         <li class="main-nav__item main-nav__item--search">
           <a class="link main-nav__link main-nav__link--search" href="#">
-            <svg class="main-nav__item-icon" width="20" height="18">
+            <svg class="main-nav__item-icon" width="16" height="16">
               <use xlink:href="img/sprite.svg#search"></use>
             </svg>
             <span class="main-nav__search-text">Поиск по сайту</span>
@@ -45,8 +45,8 @@
               <use xlink:href="img/sprite.svg#cart"></use>
             </svg>
             <span class="main-nav__cart-text">
-              Корзина: пока пуста
-            </span>
+                Корзина: пока пуста
+              </span>
           </a>
         </li>
         <li class="main-nav__item main-nav__item--delivery">
