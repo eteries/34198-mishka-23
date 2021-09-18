@@ -130,11 +130,12 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/flag.svg");
     background-repeat: no-repeat;
-    background-position: top -8px right 2px;
+    background-position: top 2px right 2px;
     min-height: 81px;
     display: flex;
     align-items: center;
-    margin: 15px 0 34px;
+    margin: 5px 0 34px;
+    padding: 10px 0 0;
   }
 
   @media (min-width: $desktop-width) {
