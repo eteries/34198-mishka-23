@@ -3,7 +3,7 @@
   margin: 0 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 0 50px;
+    padding: 58px 0 50px;
     margin: 0;
   }
 
@@ -55,12 +55,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 26px 0 0 16px;
+    margin: 23px 0 0 16px;
   }
 
   &--email {
     @media (min-width: $tablet-width) {
       margin-top: 40px;
+    }
+  }
+
+  &--textarea {
+    @media (min-width: $tablet-width) {
+      margin-top: 26px;
     }
   }
 }
@@ -128,7 +134,7 @@
     margin-bottom: 42px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 4px;
+      margin-bottom: 42px;
     }
 
     @media (min-width: $desktop-width) {
@@ -152,7 +158,7 @@
     margin-top: 32px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 47px;
+      margin-top: 46px;
     }
 
     @media (min-width: $desktop-width) {
@@ -172,12 +178,12 @@
     @media (min-width: $desktop-width) {
       margin: 7px 0 5px;
       grid-template-columns: repeat(3, 1fr);
-      gap: 0 100px;
+      gap: 0 99px;
     }
   }
 
   &--input {
-    margin-top: 29px;
+    margin-top: 27px;
 
     @media (min-width: $tablet-width) {
       margin: 50px 0 26px;
@@ -216,10 +222,10 @@
     margin-top: 23px;
 
     @media (min-width: $tablet-width) {
-      margin: 46px 0 52px;
+      margin: 8px 0 51px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       margin: 8px 0 24px;
     }
   }
@@ -235,6 +241,10 @@
 
 .order-form__checkbox {
   margin-bottom: 23px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .order-form__input {

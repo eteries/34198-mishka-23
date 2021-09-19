@@ -19,6 +19,11 @@
     margin: 17px 24px 0 -2px;
     grid-area: label;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 17px 24px 0 1px;
+    grid-area: label;
+  }
 }
 
 .input__control {
@@ -49,7 +54,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
-    padding: 15px 32px 15px 18px;
+    padding: 14px 32px 15px 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 19px;
+    padding: 12px 32px 15px 16px;
   }
 }
 

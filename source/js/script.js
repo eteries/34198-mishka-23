@@ -6,7 +6,7 @@
 
   const setUpJSMenu = () => {
     menu.classList.remove('main-nav__list--no-js');
-    header.classList.remove('page-header--no-js');
+    header.classList.remove('page__header--no-js');
     nav.classList.remove('main-nav--no-js');
     toggle.classList.remove('main-nav__toggle--no-js');
   }
