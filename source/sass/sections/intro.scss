@@ -82,8 +82,8 @@
   transition: 0.2s all;
   position: relative;
 
-  &:after {
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     right: 20px;
     top: 23px;
@@ -97,15 +97,15 @@
     background-color: $color-green-darkest;
   }
 
-  &:hover:after {
+  &:hover::after {
     opacity: 0.7;
   }
 
-  &:active:after {
+  &:active::after {
     opacity: 0.3;
   }
 
-  &--interior:after {
+  &--interior::after {
     background-image: url("../img/link-interior.svg");
     right: 36px;
     width: 40px;
@@ -120,7 +120,7 @@
   &--toy {
     background-color: $color-green-dark;
 
-    &:after {
+    &::after {
       right: 26px;
       width: 62px;
       height: 62px;
