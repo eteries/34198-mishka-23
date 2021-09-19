@@ -45,6 +45,10 @@
     text-decoration: none;
     opacity: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    text-underline-offset: 10px;
+  }
 }
 
 .link--icon-primary {

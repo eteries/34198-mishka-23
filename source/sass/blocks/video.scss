@@ -1,7 +1,7 @@
 .video {
   border: 1px solid $color-gray-medium;
-  padding: 21px 34px 33px;
-  margin: 0 0 37px;
+  padding: 22px 34px 12px;
+  margin: 0 0 58px;
 
   &:hover,
   &:focus {
@@ -19,8 +19,8 @@
       "title"
       "description"
       "action";
-    padding: 0 0 33px 0;
-    margin: 0 0 74px;
+    padding: 0 0 26px 0;
+    margin: -4px 0 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,7 +43,7 @@
   background-repeat: no-repeat;
   background-position: 0 12px;
   grid-area: title;
-  padding-left: 57px;
+  padding-left: 56px;
   margin: 0 0 26px;
 
   @media (min-width: $tablet-width) {
@@ -69,11 +69,11 @@
   @media (min-width: $tablet-width) {
     @include text-size(15px, 30px);
 
-    margin: 24px 40px 43px;
+    margin: 23px 40px 23px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 28px 0 33px;
+    margin: 28px 0 32px;
   }
 }
 
@@ -82,7 +82,7 @@
   grid-area: poster;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 35px;
+    margin: 0 0 40px;
     border-bottom: 1px solid $color-gray-medium;
   }
 
@@ -95,12 +95,13 @@
 .video__button {
   width: 100%;
   grid-area: action;
-  margin: 28px 0 20px;
+  margin: 28px 33px 20px 0;
   padding-left: 11px;
   padding-right: 11px;
+  font-size: 18px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 40px;
+    margin: 20px 40px;
     width: auto;
   }
 
@@ -108,5 +109,6 @@
     place-self: start;
     width: 230px;
     margin: 20px 0;
+    font-size: 17px;
   }
 }

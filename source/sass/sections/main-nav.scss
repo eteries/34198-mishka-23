@@ -121,7 +121,7 @@
 .main-nav__link {
   display: flex;
   align-items: center;
-  padding: 27px 30px 27px 75px;
+  padding: 26px 30px 27px 76px;
 
   @include text-size(17px, 24px);
 
@@ -155,8 +155,6 @@
 
   &--catalog,
   &--form {
-    padding: 20px 30px 20px 76px;
-
     @media (min-width: $tablet-width) {
       padding: 20px 0;
     }
@@ -196,6 +194,7 @@
   background-position: center;
   cursor: pointer;
   place-self: center end;
+  margin: -2px 0 0 1px;
 
   &--close {
     background-image: url("../img/menu-close.svg");

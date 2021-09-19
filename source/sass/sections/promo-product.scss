@@ -1,12 +1,12 @@
 .promo-product {
-  padding: 19px 0 36px;
+  padding: 17px 0 36px;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 0 36px;
+    padding: 39px 0 65px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 43px 0 62px;
+  @media (min-width: $desktop-width) {
+    padding: 38px 0 62px;
   }
 }
 
@@ -44,7 +44,7 @@
   grid-area: title;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 32px;
+    margin: 0 0 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,11 +68,13 @@
     grid-area: label;
     text-align: center;
     padding-right: 27px;
+    padding-top: 2px;
+    line-height: 19px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 82px 0 0 32px;
-    padding-right: 0;
+    padding: 0;
   }
 }
 
@@ -98,7 +100,11 @@
   margin: 20px 0 25px;
 
   @media (min-width: $tablet-width) {
-    margin: 22px 0 17px;
+    margin: 25px 0 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 21px 0 17px;
   }
 }
 
@@ -115,7 +121,7 @@
   grid-area: price;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 28px;
+  margin: 21px 0 24px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -125,7 +131,7 @@
   @media (min-width: $desktop-width) {
     place-self: end center;
     padding-right: 15px;
-    margin: 25px 0 5px;
+    margin: 25px 0 2px;
     text-align: left;
   }
 }
@@ -134,6 +140,7 @@
   grid-area: action;
   display: block;
   width: 100%;
+  font-size: 18px;
 
   @media (min-width: $tablet-width) {
     width: auto;

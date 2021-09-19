@@ -1,12 +1,12 @@
 .contacts {
-  padding: 38px 0 28px;
+  padding: 42px 0 28px;
 
   @media (min-width: $tablet-width) {
     padding: 66px 0 47px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 0 100px;
+    padding: 66px 0 95px;
   }
 }
 
@@ -15,10 +15,10 @@
   @include zigzag-line();
 
   &::after {
-    top: -46px;
+    top: -45px;
 
     @media (min-width: $tablet-width) {
-      top: -75px;
+      top: -69px;
     }
   }
 
@@ -35,16 +35,19 @@
 
 .contacts__action {
   display: flex;
-  margin: 38px auto 10px;
+  margin: 36px auto 10px;
+
+  @include text-size(18px, 20px);
 
   @media (min-width: $tablet-width) {
     width: 230px;
-    margin: 50px auto 10px;
+    margin: 51px auto 10px;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 174px;
     grid-area: bottom-left;
+    margin: 55px auto 10px 174px;
   }
 }
 
@@ -106,7 +109,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 22px 0 0;
+    margin: 24px 0 0;
     width: 100%;
     grid-area: right;
   }
@@ -125,23 +128,23 @@
 
 .contacts__title {
   width: 100%;
-  margin: 15px 0 27px;
+  margin: 10px 0 27px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/flag.svg");
     background-repeat: no-repeat;
-    background-position: top 2px right 2px;
+    background-position: top right 2px;
     min-height: 81px;
     display: flex;
     align-items: center;
-    margin: 5px 0 34px;
-    padding: 10px 0 0;
+    margin: 7px 0 40px;
+    padding: 13px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    background-position: top 62px left 63px;
+    background-position: top 64px left 63px;
     grid-area: top-left;
     margin: 22px 0 18px;
-    padding: 80px 0 0 174px;
+    padding: 82px 0 0 174px;
   }
 }
