@@ -2,12 +2,16 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Мишка - Вязание на спицах - Форма заказа</title>
+  <title>HTML Academy: Мишка - Вязание - Форма заказа</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page__body">
-<header class="page__header page-header">
+<header class="page__header page__header--no-js page-header">
   <div class="page-header__wrapper">
     <a href="index.html" class="page-header__logo">
       <picture>
@@ -16,11 +20,11 @@
         <img src="img/mishka-logo-mobile.svg" class="page-header__logo-img" width="86" height="35" alt="Интернет-магазин «Мишка»">
       </picture>
     </a>
-    <nav class="page-header__nav main-nav">
-      <button class="main-nav__toggle" type="button">
+    <nav class="page-header__nav main-nav main-nav--no-js">
+      <button class="main-nav__toggle main-nav__toggle--no-js" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list">
+      <ul class="main-nav__list main-nav__list--no-js">
         <li class="main-nav__item main-nav__item--catalog">
           <a class="link main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
         </li>
@@ -46,7 +50,7 @@
           </a>
         </li>
         <li class="main-nav__item main-nav__item--delivery">
-          <a class="link main-nav__link--delivery" href="#">
+          <a class="link main-nav__link main-nav__link--delivery" href="#">
             Бесплатная доставка по России
           </a>
         </li>
@@ -94,13 +98,13 @@
           <input class="checkbox__input" type="checkbox" name="color-gray" id="color-gray" checked>
           <label class="checkbox__label" for="color-gray">Серый</label>
         </li>
-        <li class="order-form__checkbox order-form__control--checkbox checkbox">
+        <li class="order-form__checkbox checkbox">
           <input class="checkbox__input" type="checkbox" name="color-tiffany" id="color-tiffany">
           <label class="checkbox__label" for="color-tiffany">«Тиффани»</label>
         </li>
         <li class="order-form__checkbox checkbox">
           <input class="checkbox__input" type="checkbox" name="color-black" id="color-black">
-          <label class="checkbox__label" for="color-black">Чёрный</label>
+          <label class="checkbox__label" for="color-black">Черный</label>
         </li>
         <li class="order-form__checkbox checkbox">
           <input class="checkbox__input" type="checkbox" name="color-pink" id="color-pink">
@@ -154,7 +158,7 @@
       </ul>
     </div>
     <div class="order-form__group">
-      <h3 class="order-form__title">ДОП</h3>
+      <h3 class="order-form__title order-form__title--textarea">ДОП</h3>
       <ul class="order-form__controls-list order-form__controls-list--textarea">
         <li class="order-form__textarea input">
           <label class="input__label visually-hidden" for="wishes">Дополнительные пожелания:</label>
@@ -170,8 +174,8 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <a href="index.html" class="page-footer__logo link link--icon">
-      <svg class="social-list__icon" width="102" height="34" aria-label="Интернет-магазин «Мишка»">
+    <a href="index.html" class="page-footer__logo link link--icon-secondary">
+      <svg width="102" height="34" aria-label="Интернет-магазин «Мишка»">
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
     </a>
@@ -179,38 +183,34 @@
       <h3 class="visually-hidden">«Мишка» в социальных сетях</h3>
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="link link--icon" href="https://instagram.com">
+          <a class="link link--icon-secondary" href="https://instagram.com">
             <svg width="22" height="21" aria-label="Наш Instagram">
               <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>
-            <span class="visually-hidden">Instagram</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="link link--icon" href="https://facebook.com">
+          <a class="link link--icon-secondary" href="https://facebook.com">
             <svg width="15" height="28" aria-label="Наш Facebook">
               <use xlink:href="img/sprite.svg#facebook"></use>
             </svg>
-            <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="link link--icon" href="https://twitter.com">
+          <a class="link link--icon-secondary" href="https://twitter.com">
             <svg width="23" height="20" aria-label="Наш Twitter">
               <use xlink:href="img/sprite.svg#twitter"></use>
             </svg>
-            <span class="visually-hidden">Twitter</span>
           </a>
         </li>
       </ul>
     </section>
     <p class="page-footer__copyright">
       Разработано
-      <a class="link link--icon-green" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg width="28" height="35">
+      <a class="link link--icon-primary" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg width="28" height="35" aria-label="HTML Academy">
           <use xlink:href="img/sprite.svg#academy"></use>
         </svg>
-        <span class="visually-hidden">HTML Academy</span>
       </a>
     </p>
   </div>

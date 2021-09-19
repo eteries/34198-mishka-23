@@ -1,11 +1,3 @@
-.radio {
-  padding-left: 60px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 78px;
-  }
-}
-
 .radio__input {
   @include visually-hidden();
 }
@@ -19,14 +11,15 @@
   cursor: pointer;
   user-select: none;
   min-height: 42px;
+  padding-left: 60px;
 
   &::before {
     content: "";
     position: absolute;
-    left: -61px;
-    top: 0;
-    width: 42px;
-    height: 42px;
+    left: -1px;
+    top: -1px;
+    width: 41px;
+    height: 41px;
     border: 2px solid $color-gray-dark;
     border-radius: 50%;
   }
@@ -34,20 +27,21 @@
   &::after {
     content: "";
     position: absolute;
-    top: 12px;
-    left: -49px;
-    width: 18px;
-    height: 18px;
+    top: 11px;
+    left: 11px;
+    width: 17px;
+    height: 17px;
     border-radius: 50%;
-    background-color: $color-green-medium;
+    background-color: $color-green-light;
     display: none;
   }
 
   @media (min-width: $tablet-width) {
     min-height: 52px;
+    padding-left: 78px;
 
     &::before {
-      left: -78px;
+      left: 0;
       top: 0;
       width: 51px;
       height: 51px;
@@ -55,10 +49,14 @@
 
     &::after {
       top: 15px;
-      left: -63px;
+      left: 15px;
       width: 22px;
       height: 22px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
   }
 }
 
@@ -67,9 +65,9 @@
 }
 
 .radio__label:hover::before {
-  border-color: $color-green-medium;
+  border-color: $color-green-light;
 }
 
-.radio__label:active {
-  opacity: 0.3;
+.radio__label:active::before {
+  border-color: rgba($color-gray-darkest, 0.3);
 }

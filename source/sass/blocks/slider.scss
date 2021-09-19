@@ -2,6 +2,13 @@
   display: flex;
   cursor: pointer;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 137px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 15px 18px;
+  }
 }
 
 .slider__prev,
@@ -10,7 +17,7 @@
 
   background-image: url("../img/arrow-left-lg.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 37px 11px;
   width: 50%;
   border-width: 1px;
 
@@ -27,6 +34,11 @@
 
   @media (min-width: $tablet-width) {
     border-color: transparent;
+    width: 50px;
+    height: 26px;
+    min-height: 26px;
+    padding: 0;
+    background-position: 0 0;
 
     &:hover,
     &:focus {

@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 76px;
+    padding: 0 0 70px;
   }
 }
 
@@ -22,6 +22,7 @@
     grid-template-columns: 1fr 175px;
     grid-template-rows: repeat(3, min-content);
     background-image: url("../img/review-bg.jpg");
+    background-size: 350px 455px;
     background-repeat: no-repeat;
     min-height: 350px;
     padding: 82px 50px;
@@ -29,7 +30,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/review-bg@2x.jpg");
-      background-size: 350px 457px;
     }
   }
 
@@ -47,11 +47,17 @@
   margin: 0 0 12px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 22px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin: 0 0 20px;
   }
 }
 
 .testimonials__write {
+  @include text-size(18px, 20px);
+
   grid-area: top-right;
   place-self: center;
   width: 100%;
@@ -59,6 +65,12 @@
   @media (min-width: $tablet-width) {
     place-self: start;
     width: 175px;
+    font-size: 17px;
+    margin-top: -4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
 
@@ -80,11 +92,11 @@
 .testimonials__text {
   @include text-size(15px, 30px);
 
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
-    margin-bottom: 62px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,6 +113,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {

@@ -9,13 +9,15 @@
 }
 
 .product__info {
-  background: $color-gray-lightest;
-  border: 1px solid $color-gray-medium;
-  padding: 26px 32px 0 26px;
+  @include color-scheme($color-gray-lightest, $color-gray-darkest, $color-gray-medium);
+
+  padding: 29px 33px 0 28px;
   display: flex;
   flex-direction: column;
   flex: 1;
   min-height: 179px;
+  border-width: 1px;
+  border-style: solid;
 
   &:hover,
   &:focus {
@@ -27,40 +29,62 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 32px 0 32px;
+    padding: 25px 32px 0;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 197px;
-    padding: 26px 32px 0 26px;
+    padding: 28px 32px 0 28px;
+  }
+
+  &--big {
+    padding: 25px 33px 0 28px;
+
+    @media (min-width: $tablet-width) {
+      padding: 22px 32px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 27px 31px 0 27px;
+    }
   }
 }
 
 .product__title {
-  margin: 0 0 12px;
+  margin: 0 0 7px;
+  color: inherit;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin-bottom: 11px;
+    margin-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 7px;
+    margin-bottom: 5px;
   }
 }
 
 .product__title-link {
   color: $color-gray-darkest;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba($color-gray-darkest, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-gray-darkest, 0.6);
+  }
 }
 
 .product__description {
-  margin: 0 0 13px;
+  margin: 0 0 17px;
 
   @include text-size(13px, 30px);
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 20px;
+    margin: 0 0 10px;
     font-size: 15px;
   }
 }
@@ -86,7 +110,6 @@
   @include text-size(15px, 24px);
 
   font-weight: 700;
-  color: $color-gray-darkest;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -96,27 +119,32 @@
 .product__order {
   color: $color-gray-darkest;
   opacity: 0.2;
+  margin-right: -5px;
 
-  :hover,
-  :focus {
+  &:hover,
+  &:focus {
     color: $color-green-medium;
     opacity: 1;
   }
 
-  :active {
+  &:active {
     color: $color-green-medium;
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 
 .product__footer {
-  padding: 23px 0 25px;
+  padding: 23px 0 27px;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid $color-gray-medium;
   margin-top: auto;
 
   @media (min-width: $desktop-width) {
-    padding: 14px 0 27px;
+    padding: 23px 0 25px;
   }
 }
