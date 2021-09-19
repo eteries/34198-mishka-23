@@ -16,7 +16,7 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-    margin: 17px 24px 0 -2px;
+    margin: 17px 24px 0 -1px;
     grid-area: label;
   }
 
@@ -59,7 +59,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 19px;
-    padding: 12px 32px 15px 16px;
+    padding: 12px 32px 15px 17px;
   }
 }
 

@@ -20,3 +20,7 @@
     border-color: $color-green-medium;
   }
 }
+
+.radio-group__radio:checked + .radio-group__label {
+  border-color: $color-green-medium;
+}

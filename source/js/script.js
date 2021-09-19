@@ -22,6 +22,8 @@
 
 (function() {
   const mapBox = document.querySelector('.contacts__map-box');
+  if (!mapBox) return;
+
   const mapImage = mapBox.querySelector('.contacts__map-image');
   const map = mapBox.querySelector('.contacts__map');
 
