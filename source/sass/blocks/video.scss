@@ -34,7 +34,7 @@
     grid-template-rows: repeat(3, min-content) 1fr;
     gap: 0 76px;
     padding: 0 36px 0 0;
-    margin: 25px 0 105px;
+    margin: 27px 0 105px;
   }
 }
 
@@ -103,12 +103,12 @@
   @media (min-width: $tablet-width) {
     margin: 20px 40px;
     width: auto;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
     place-self: start;
     width: 230px;
     margin: 20px 0;
-    font-size: 17px;
   }
 }
